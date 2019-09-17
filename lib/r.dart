@@ -29,4 +29,10 @@ class R {
   static final String assetsImgImgDefaultWidth = 'assets/img/img_default_width.png';
   /// ![](http://127.0.0.1:9227/assets/img/slogan.png)
   static final String assetsImgSlogan = 'assets/img/slogan.png';
+  /// ![](http://127.0.0.1:9227/assets/img/zhishu.png)
+  static final String assetsImgZhishu = 'assets/img/zhishu.png';
+  /// ![](http://127.0.0.1:9227/assets/img/zhishu1.png)
+  static final String assetsImgZhishu1 = 'assets/img/zhishu1.png';
+  /// ![](http://127.0.0.1:9227/assets/img/zhishu2.png)
+  static final String assetsImgZhishu2 = 'assets/img/zhishu2.png';
 }

@@ -70,6 +70,9 @@ flutter:
     - assets/img/img_default_squar_small.png
     - assets/img/img_default_width.png
     - assets/img/slogan.png
+    - assets/img/zhishu.png
+    - assets/img/zhishu1.png
+    - assets/img/zhishu2.png
     # assets-generator-end
     - assets/data_home.json
 

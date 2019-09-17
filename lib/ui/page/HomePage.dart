@@ -3,11 +3,13 @@ import 'dart:async';
 import 'package:bbhouse/bloc/index_bloc.dart';
 import 'package:bbhouse/comm/c.dart';
 import 'package:bbhouse/data/HomeModel.dart';
+import 'package:bbhouse/ui/page/HomePageZhishu.dart';
 import 'package:bbhouse/ui/page/WebViewPage.dart';
 import 'package:bbhouse/ui/widget/marquee/flutter_marquee.dart';
 import 'package:bbhouse/ui/widget/page_route_builders.dart';
 import 'package:bbhouse/util/util_screen.dart';
 import 'package:bbhouse/util/utils.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyrefresh/ball_pulse_header.dart';
 import 'package:flutter_easyrefresh/easy_refresh.dart';
@@ -38,7 +40,6 @@ class _HomePageState extends State<HomePage> {
 
   HomeBloc _bloc;
   bool _dataLoaded = false;
-  GlobalKey<ScaffoldState> _globalKey = new GlobalKey<ScaffoldState>(debugLabel: '_HomePageState');
 
   _initDataOnce() {
     if (_dataLoaded) return;
@@ -53,7 +54,6 @@ class _HomePageState extends State<HomePage> {
     _bloc = BlocProvider.of<HomeBloc>(context);
     _initDataOnce();
     return Scaffold(
-      key: _globalKey,
       backgroundColor: Colors.white,
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(MediaQuery.of(context).size.height * 0.07),
@@ -70,11 +70,29 @@ class _HomePageState extends State<HomePage> {
 
   EasyRefreshController _controller = EasyRefreshController();
 
+  //可刷新内容视图
   Widget _buildContent(BuildContext context) {
     return EasyRefresh(
       controller: _controller,
       header: BallPulseHeader(),
-      child: _buildContentView(context),
+      child: StreamBuilder(
+          stream: _bloc.homeStream,
+          builder: (BuildContext context, AsyncSnapshot<HomeModel> snapshot) {
+            if (snapshot == null || snapshot.data == null) {
+              return Center(child: Image.asset(R.assetsImgEmpty));
+            } else {
+              HomeModel model = snapshot.data;
+              return SingleChildScrollView(
+                child: Column(
+                  children: <Widget>[
+                    _buildIconsGridList(model.icons),
+                    _createSlogan(),
+                    HomePageZhishu(),
+                  ],
+                ),
+              );
+            }
+          }),
       onRefresh: () async {
         await Future.delayed(Duration(seconds: 1), () {
           _bloc.getHomeData();
@@ -82,26 +100,6 @@ class _HomePageState extends State<HomePage> {
         });
       },
     );
-  }
-
-  Widget _buildContentView(BuildContext context) {
-    return StreamBuilder(
-        stream: _bloc.homeStream,
-        builder: (BuildContext context, AsyncSnapshot<HomeModel> snapshot) {
-          if (snapshot == null || snapshot.data == null) {
-            return Center(child: Image.asset(R.assetsImgEmpty));
-          } else {
-            HomeModel model = snapshot.data;
-            return SingleChildScrollView(
-              child: Column(
-                children: <Widget>[
-                  _buildIconsGridList(model.icons),
-                  _createSlogan(),
-                ],
-              ),
-            );
-          }
-        });
   }
 
   //slogan
@@ -137,9 +135,7 @@ class _HomePageState extends State<HomePage> {
                 Text(item.title, style: TextStyle(color: Color(0xFF333333), fontSize: 10)),
               ],
             ),
-            onTap: () {
-              Utils.wait(item.title);
-            },
+            onTap: () => Utils.wait(item.title),
           );
         }).toList(),
       ),
@@ -174,6 +170,7 @@ class _HomePageState extends State<HomePage> {
                     seletedTextColor: C.app_gray,
                     textColor: C.app_gray,
                     duration: 4,
+                    textSize: 17,
                     itemDuration: 1200,
                     singleLine: true,
                   ),
@@ -190,9 +187,7 @@ class _HomePageState extends State<HomePage> {
               Text('深圳', style: TextStyle(fontSize: 16)),
             ],
           ),
-          onTap: () {
-            Utils.showWaiting(_globalKey);
-          },
+          onTap: () => Utils.wait('定位'),
         ),
         SizedBox(width: 20),
       ],
