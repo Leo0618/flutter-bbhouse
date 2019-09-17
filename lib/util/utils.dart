@@ -18,6 +18,10 @@ class Utils {
     toast('暂未开放，敬请期待');
   }
 
+  static void wait(String msg) {
+    toast('待完成: $msg');
+  }
+
   //toast
   static void toast(String msg) {
     Fluttertoast.cancel();

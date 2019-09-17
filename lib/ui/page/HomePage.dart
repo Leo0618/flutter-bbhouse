@@ -3,10 +3,11 @@ import 'dart:async';
 import 'package:bbhouse/bloc/index_bloc.dart';
 import 'package:bbhouse/comm/c.dart';
 import 'package:bbhouse/data/HomeModel.dart';
+import 'package:bbhouse/ui/page/WebViewPage.dart';
 import 'package:bbhouse/ui/widget/marquee/flutter_marquee.dart';
+import 'package:bbhouse/ui/widget/page_route_builders.dart';
 import 'package:bbhouse/util/util_screen.dart';
 import 'package:bbhouse/util/utils.dart';
-import 'package:flog/flog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyrefresh/ball_pulse_header.dart';
 import 'package:flutter_easyrefresh/easy_refresh.dart';
@@ -95,11 +96,25 @@ class _HomePageState extends State<HomePage> {
               child: Column(
                 children: <Widget>[
                   _buildIconsGridList(model.icons),
+                  _createSlogan(),
                 ],
               ),
             );
           }
         });
+  }
+
+  //slogan
+  Widget _createSlogan() {
+    return Container(
+      padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
+      child: InkWell(
+        child: Image.asset(R.assetsImgSlogan),
+        onTap: () => Navigator.of(context).push(
+          RouteBuilders.slideFromRight(WebViewPage('https://activity.ke.com/tercen_purase/mainroom?activityId=130&city_id=440300')),
+        ),
+      ),
+    );
   }
 
   //图标grid入口
@@ -123,7 +138,7 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
             onTap: () {
-              Utils.toast(item.title);
+              Utils.wait(item.title);
             },
           );
         }).toList(),
@@ -131,10 +146,13 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  //搜索标题栏
   Widget _buildTitleSearch(BuildContext context) {
     return Row(
       children: <Widget>[
         Expanded(
+            child: InkWell(
+          splashColor: Colors.transparent,
           child: Container(
             width: double.infinity,
             height: UtilScreen.getInstance().appBarHeight - 5,
@@ -163,7 +181,8 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-        ),
+          onTap: () => Utils.wait('搜索'),
+        )),
         new InkWell(
           child: Row(
             children: <Widget>[

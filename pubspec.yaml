@@ -35,6 +35,8 @@ dependencies:
     git: https://github.com/Leo0618/flog.git
   # https://github.com/xuelongqy/flutter_easyrefresh
   flutter_easyrefresh: ^2.0.4
+  # https://github.com/flutter/plugins/tree/master/packages/webview_flutter
+  webview_flutter: ^0.3.14+1
 
 dev_dependencies:
   flutter_test:
@@ -67,6 +69,7 @@ flutter:
     - assets/img/img_default_squar_large.png
     - assets/img/img_default_squar_small.png
     - assets/img/img_default_width.png
+    - assets/img/slogan.png
     # assets-generator-end
     - assets/data_home.json
 

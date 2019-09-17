@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="vip.okfood.bbhouse">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- io.flutter.app.FlutterApplication is an android.app.Application that
          calls FlutterMain.startInitialization(this); in its onCreate method.
@@ -16,6 +16,7 @@
         android:largeHeap="true"
         android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning,UnusedAttribute">
         <activity
             android:name=".MainActivity"
@@ -37,15 +38,15 @@
             </intent-filter>
         </activity>
 
-        <provider
-            android:name="android.support.v4.content.FileProvider"
-            android:authorities="${applicationId}.fileprovider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_path"
-                tools:replace="android:resource" />
-        </provider>
+        <!--        <provider
+                    android:name="android.support.v4.content.FileProvider"
+                    android:authorities="${applicationId}.fileprovider"
+                    android:exported="false"
+                    android:grantUriPermissions="true">
+                    <meta-data
+                        android:name="android.support.FILE_PROVIDER_PATHS"
+                        android:resource="@xml/provider_path"
+                        tools:replace="android:resource" />
+                </provider>-->
     </application>
 </manifest>
