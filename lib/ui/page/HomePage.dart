@@ -6,6 +6,7 @@ import 'package:bbhouse/data/HomeModel.dart';
 import 'package:bbhouse/ui/widget/marquee/flutter_marquee.dart';
 import 'package:bbhouse/util/util_screen.dart';
 import 'package:bbhouse/util/utils.dart';
+import 'package:flog/flog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyrefresh/ball_pulse_header.dart';
 import 'package:flutter_easyrefresh/easy_refresh.dart';
@@ -31,6 +32,7 @@ class _HomePageState extends State<HomePage> {
   void dispose() {
     super.dispose();
     if (_bloc != null) _bloc.dispose();
+    if (_controller != null) _controller.dispose();
   }
 
   HomeBloc _bloc;
@@ -40,7 +42,7 @@ class _HomePageState extends State<HomePage> {
   _initDataOnce() {
     if (_dataLoaded) return;
     _dataLoaded = true;
-    Future.delayed(Duration(seconds: 2), () {
+    Future.delayed(Duration(seconds: 1), () {
       _bloc.getHomeData();
     });
   }
@@ -73,7 +75,8 @@ class _HomePageState extends State<HomePage> {
       header: BallPulseHeader(),
       child: _buildContentView(context),
       onRefresh: () async {
-        await Future.delayed(Duration(seconds: 2), () {
+        await Future.delayed(Duration(seconds: 1), () {
+          _bloc.getHomeData();
           _controller.resetRefreshState();
         });
       },
@@ -87,21 +90,45 @@ class _HomePageState extends State<HomePage> {
           if (snapshot == null || snapshot.data == null) {
             return Center(child: Image.asset(R.assetsImgEmpty));
           } else {
-            return new CustomScrollView(
-              shrinkWrap: true,
-              slivers: <Widget>[
-                new SliverPadding(
-                  padding: const EdgeInsets.only(top: 5, bottom: 5),
-                  sliver: new SliverList(
-                    delegate: new SliverChildListDelegate(
-                      <Widget>[], //TODO
-                    ),
-                  ),
-                ),
-              ],
+            HomeModel model = snapshot.data;
+            return SingleChildScrollView(
+              child: Column(
+                children: <Widget>[
+                  _buildIconsGridList(model.icons),
+                ],
+              ),
             );
           }
         });
+  }
+
+  //图标grid入口
+  Widget _buildIconsGridList(List<IconsListBean> icons) {
+    return Container(
+      padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
+      child: GridView.count(
+        crossAxisSpacing: 25.0,
+        mainAxisSpacing: 20.0,
+        primary: false,
+        crossAxisCount: 5,
+        shrinkWrap: true,
+        children: icons.map((item) {
+          return InkWell(
+            splashColor: Colors.transparent,
+            child: Column(
+              children: <Widget>[
+                Expanded(child: FadeInImage.assetNetwork(placeholder: R.assetsImgImgDefaultSquarSmall, image: item.imgUrl)),
+                SizedBox(height: 7),
+                Text(item.title, style: TextStyle(color: Color(0xFF333333), fontSize: 10)),
+              ],
+            ),
+            onTap: () {
+              Utils.toast(item.title);
+            },
+          );
+        }).toList(),
+      ),
+    );
   }
 
   Widget _buildTitleSearch(BuildContext context) {
@@ -123,13 +150,15 @@ class _HomePageState extends State<HomePage> {
               children: <Widget>[
                 Icon(Icons.search, size: 20, color: C.app_gray),
                 SizedBox(width: 10),
-                FlutterMarquee(
-                  texts: ["龙珠花园", "阳光花园", "尚水天成", "万象天成"].toList(),
-                  seletedTextColor: C.app_gray,
-                  textColor: C.app_gray,
-                  duration: 4,
-                  itemDuration: 1200,
-                  singleLine: true,
+                Expanded(
+                  child: FlutterMarquee(
+                    texts: ["龙珠花园", "阳光花园", "尚水天成", "万象天成"].toList(),
+                    seletedTextColor: C.app_gray,
+                    textColor: C.app_gray,
+                    duration: 4,
+                    itemDuration: 1200,
+                    singleLine: true,
+                  ),
                 ),
               ],
             ),

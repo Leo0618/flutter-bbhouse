@@ -31,9 +31,8 @@ class HomeBloc implements BlocBase {
   Stream<HomeModel> get homeStream => _homeubject.stream;
 
   void getHomeData() async {
-    DataRepo.getHomeData().then((HomeModel model) {
-      if (!_homeubject.isClosed) _homeSink.add(model);
-    });
+    HomeModel model = await DataRepo.getHomeData();
+    if (!_homeubject.isClosed) _homeSink.add(model);
   }
 
   @override

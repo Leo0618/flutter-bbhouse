@@ -90,7 +90,6 @@ class _FlutterMarquee extends State<FlutterMarquee> {
     if (widget.texts != null) {
       for (var i = 0; i < widget.texts.length; i++) {
         items.add(new FlutterMarqueeItem(
-          key: GlobalKey(),
           //child: Text(widget.texts[i]),
           text: widget.texts[i],
           onPress: () {
@@ -107,7 +106,6 @@ class _FlutterMarquee extends State<FlutterMarquee> {
     } else {
       for (var i = 0; i < widget.children.length; i++) {
         items.add(new FlutterMarqueeItem(
-          key: GlobalKey(),
           child: widget.children[i],
           // text: widget.texts[i],
           onPress: () {
@@ -172,7 +170,7 @@ class _FlutterMarquee extends State<FlutterMarquee> {
         : <FlutterMarqueeItem>[secondItem..textColor = widget.seletedTextColor, firstItem..textColor = widget.textColor];
 
     return ClipRect(
-      child: Center(
+      child: Container(
         child: Stack(
           children: items,
         ),
