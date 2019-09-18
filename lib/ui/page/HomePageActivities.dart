@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import '../../r.dart';
 import 'WebViewPage.dart';
 
-/// function: HomePageNews
+/// function: HomePageActivities
 /// <p>Created by Leo on 2019/9/18.</p>
 class HomePageActivities extends StatelessWidget {
   @override

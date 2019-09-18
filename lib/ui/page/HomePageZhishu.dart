@@ -58,7 +58,7 @@ class _HomePageZhishuState extends State<HomePageZhishu> with SingleTickerProvid
                 decoration: BoxDecoration(
                   border: new Border.all(color: Color(0xFFE5E5E5), width: 0.5),
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular((5.0)),
+                  borderRadius: BorderRadius.circular(5.0),
                   boxShadow: [BoxShadow(color: Color(0xFFE5E5E5), offset: Offset(0, 1), blurRadius: 2.0, spreadRadius: 1.0)],
                 ),
                 child: Column(
