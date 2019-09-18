@@ -58,6 +58,9 @@ flutter:
     - assets/img/bg_alert.png
     - assets/img/bg_splash.png
     - assets/img/empty.png
+    - assets/img/homeNews1.png
+    - assets/img/homeNews2.png
+    - assets/img/homeNews3.png
     - assets/img/hot_ic1.png
     - assets/img/hot_ic2.png
     - assets/img/hot_ic3.png
