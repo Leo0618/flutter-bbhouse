@@ -100,7 +100,11 @@ class _HomePageCateTabState extends State<HomePageCateTab> with SingleTickerProv
             return InkWell(
               splashColor: Colors.transparent,
               child: Container(
-                decoration: BoxDecoration(color: Color(0xFFF7F7F7), borderRadius: BorderRadius.circular((5.0))),
+                decoration: BoxDecoration(
+                  color: Color(0xFFF7F7F7),
+                  borderRadius: BorderRadius.circular((5.0)),
+                  boxShadow: [BoxShadow(color: Color(0xFFF7F7F7), blurRadius: 1.0, spreadRadius: 1.0)],
+                ),
                 padding: EdgeInsets.fromLTRB(15, 10, 10, 0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,

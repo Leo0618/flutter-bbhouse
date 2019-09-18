@@ -5,6 +5,12 @@ class R {
   static final String assetsImgBgSplash = 'assets/img/bg_splash.png';
   /// ![](http://127.0.0.1:9227/assets/img/empty.png)
   static final String assetsImgEmpty = 'assets/img/empty.png';
+  /// ![](http://127.0.0.1:9227/assets/img/hot_ic1.png)
+  static final String assetsImgHotIc1 = 'assets/img/hot_ic1.png';
+  /// ![](http://127.0.0.1:9227/assets/img/hot_ic2.png)
+  static final String assetsImgHotIc2 = 'assets/img/hot_ic2.png';
+  /// ![](http://127.0.0.1:9227/assets/img/hot_ic3.png)
+  static final String assetsImgHotIc3 = 'assets/img/hot_ic3.png';
   /// ![](http://127.0.0.1:9227/assets/img/icon_account_normal.png)
   static final String assetsImgIconAccountNormal = 'assets/img/icon_account_normal.png';
   /// ![](http://127.0.0.1:9227/assets/img/icon_account_selected.png)
