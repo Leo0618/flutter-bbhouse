@@ -21,6 +21,12 @@ class R {
   static final String assetsImgHomeNews2 = 'assets/img/homeNews2.png';
   /// ![](http://127.0.0.1:9227/assets/img/homeNews3.png)
   static final String assetsImgHomeNews3 = 'assets/img/homeNews3.png';
+  /// ![](http://127.0.0.1:9227/assets/img/homexin1.png)
+  static final String assetsImgHomexin1 = 'assets/img/homexin1.png';
+  /// ![](http://127.0.0.1:9227/assets/img/homexin2.png)
+  static final String assetsImgHomexin2 = 'assets/img/homexin2.png';
+  /// ![](http://127.0.0.1:9227/assets/img/homexin3.png)
+  static final String assetsImgHomexin3 = 'assets/img/homexin3.png';
   /// ![](http://127.0.0.1:9227/assets/img/homeZhuansu1.png)
   static final String assetsImgHomeZhuansu1 = 'assets/img/homeZhuansu1.png';
   /// ![](http://127.0.0.1:9227/assets/img/homeZhuansu2.png)
@@ -37,6 +43,12 @@ class R {
   static final String assetsImgHouse2 = 'assets/img/house2.png';
   /// ![](http://127.0.0.1:9227/assets/img/house3.png)
   static final String assetsImgHouse3 = 'assets/img/house3.png';
+  /// ![](http://127.0.0.1:9227/assets/img/house4.png)
+  static final String assetsImgHouse4 = 'assets/img/house4.png';
+  /// ![](http://127.0.0.1:9227/assets/img/house5.png)
+  static final String assetsImgHouse5 = 'assets/img/house5.png';
+  /// ![](http://127.0.0.1:9227/assets/img/house6.png)
+  static final String assetsImgHouse6 = 'assets/img/house6.png';
   /// ![](http://127.0.0.1:9227/assets/img/icon_account_normal.png)
   static final String assetsImgIconAccountNormal = 'assets/img/icon_account_normal.png';
   /// ![](http://127.0.0.1:9227/assets/img/icon_account_selected.png)

@@ -7,9 +7,9 @@ import 'package:flutter/material.dart';
 import '../../r.dart';
 import 'WebViewPage.dart';
 
-/// function: HomePageRecommErshou
+/// function: HomePageRecommXin
 /// <p>Created by Leo on 2019/9/18.</p>
-class HomePageRecommErshou extends StatelessWidget {
+class HomePageRecommXin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -18,27 +18,27 @@ class HomePageRecommErshou extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text('为你推荐二手房', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.black)),
+          Text('为你推荐新房', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.black)),
           SizedBox(height: 10),
           Row(
             children: <Widget>[
               Expanded(
                   child: InkWell(
-                    child: Image.asset(R.assetsImgHomeershou1),
+                    child: Image.asset(R.assetsImgHomexin1),
                     onTap: () => Navigator.of(context).push(RouteBuilders.slideFromRight(WebViewPage('https://m.lianjia.com/subject/24666.h5'))),
                   ),
                   flex: 1),
               SizedBox(width: 5),
               Expanded(
                   child: InkWell(
-                    child: Image.asset(R.assetsImgHomeershou2),
+                    child: Image.asset(R.assetsImgHomexin2),
                     onTap: () => Navigator.of(context).push(RouteBuilders.slideFromRight(WebViewPage('https://m.lianjia.com/subject/24666.h5'))),
                   ),
                   flex: 1),
               SizedBox(width: 5),
               Expanded(
                   child: InkWell(
-                    child: Image.asset(R.assetsImgHomeershou3),
+                    child: Image.asset(R.assetsImgHomexin3),
                     onTap: () => Navigator.of(context).push(RouteBuilders.slideFromRight(WebViewPage('https://m.lianjia.com/subject/24666.h5'))),
                   ),
                   flex: 1),
@@ -55,9 +55,9 @@ class HomePageRecommErshou extends StatelessWidget {
               ),
               margin: EdgeInsets.only(top: 20),
               padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
-              child: Center(child: Text('更多二手房', style: TextStyle(fontSize: 16, color: C.app_main, fontWeight: FontWeight.w600))),
+              child: Center(child: Text('更多新房', style: TextStyle(fontSize: 16, color: C.app_main, fontWeight: FontWeight.w600))),
             ),
-            onTap: () => Utils.wait('更多二手房'),
+            onTap: () => Utils.wait('更多新房'),
           )
         ],
       ),
@@ -70,30 +70,30 @@ class HomePageRecommErshou extends StatelessWidget {
       children: <Widget>[
         _buildListItem(
           context,
-          R.assetsImgHouse1,
-          '佳兆业大都汇 2室2厅 北',
-          '龙岗区 布吉关 | 80㎡ | 高楼层 共33层',
-          '242万',
-          '30,250元/平',
-          ['必看好房', '满五年', 'VR看房', '近地铁'],
+          R.assetsImgHouse4,
+          '华润城万象府',
+          '地铁口，成熟片区，配套丰富',
+          '102000元/平',
+          '建面 90-400㎡',
+          ['地铁沿线', '公交直达', '购物方便', '娱乐丰富'],
         ),
         _buildListItem(
           context,
-          R.assetsImgHouse2,
-          '中海半山溪谷公园 2室1厅 东北',
-          '盐田区 盐田港 | 74.5㎡ | 中楼层 共9层',
-          '260万',
-          '34,890元/平',
-          ['必看好房', '满五年', 'VR看房', '随时可看'],
+          R.assetsImgHouse5,
+          '中森公园华府',
+          '住宅 龙华区 观澜',
+          '45000元/平',
+          '建面 69-121㎡',
+          ['绿化率高'],
         ),
         _buildListItem(
           context,
-          R.assetsImgHouse3,
-          '领航城领尚花园 1室1厅 东',
-          '宝安区 西乡 | 51.7㎡ | 低楼层 共31层',
-          '289万',
-          '55,921元/平',
-          ['必看好房', '满五年', 'VR看房', '房主推荐'],
+          R.assetsImgHouse6,
+          '佳兆业盐田城市广场',
+          '山海间的百万建面综合体',
+          '48000元/平',
+          '建面 71-140㎡',
+          ['品牌房企', '人车分离', '购物方便', '娱乐丰富'],
         ),
       ],
     );
@@ -135,14 +135,9 @@ class HomePageRecommErshou extends StatelessWidget {
                       SizedBox(height: 2),
                       Row(
                         children: tags.map((item) {
-                          int index = tags.indexOf(item);
                           return Row(
                             children: <Widget>[
-                              TagWidget(
-                                item,
-                                tagNameColor: index == 0 ? Colors.white : Color(0xFF9EAFBF),
-                                bgColor: index == 0 ? C.app_main : Color(0xFFECEFF2),
-                              ),
+                              TagWidget(item, tagNameColor: Color(0xFF9EAFBF), bgColor: Color(0xFFECEFF2)),
                               SizedBox(width: 5),
                             ],
                           );

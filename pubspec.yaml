@@ -66,6 +66,9 @@ flutter:
     - assets/img/homeNews1.png
     - assets/img/homeNews2.png
     - assets/img/homeNews3.png
+    - assets/img/homexin1.png
+    - assets/img/homexin2.png
+    - assets/img/homexin3.png
     - assets/img/homeZhuansu1.png
     - assets/img/homeZhuansu2.png
     - assets/img/hot_ic1.png
@@ -74,6 +77,9 @@ flutter:
     - assets/img/house1.png
     - assets/img/house2.png
     - assets/img/house3.png
+    - assets/img/house4.png
+    - assets/img/house5.png
+    - assets/img/house6.png
     - assets/img/icon_account_normal.png
     - assets/img/icon_account_selected.png
     - assets/img/icon_feedlist_normal.png

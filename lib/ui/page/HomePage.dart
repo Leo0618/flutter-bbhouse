@@ -7,6 +7,7 @@ import 'package:bbhouse/ui/page/HomePageCateTab.dart';
 import 'package:bbhouse/ui/page/HomePageHotTopic.dart';
 import 'package:bbhouse/ui/page/HomePageNews.dart';
 import 'package:bbhouse/ui/page/HomePageRecommErshou.dart';
+import 'package:bbhouse/ui/page/HomePageRecommXin.dart';
 import 'package:bbhouse/ui/page/HomePageZhishu.dart';
 import 'package:bbhouse/ui/page/WebViewPage.dart';
 import 'package:bbhouse/ui/widget/marquee/flutter_marquee.dart';
@@ -100,6 +101,7 @@ class _HomePageState extends State<HomePage> {
                     HomePageActivities(),
                     HomePageZhuanshu(),
                     HomePageRecommErshou(),
+                    HomePageRecommXin(),
                   ],
                 ),
               );
