@@ -1,393 +1,476 @@
 {
-  "activities":{
-    "list":[
+  "activities": {
+    "list": [
       {
-        "action_url":"https://m.ke.com/subject/24685.h5",
-        "id":"1177",
-        "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/48a6b1f93deb5786129b90cc3612016b.png",
-        "item_key":"zufangsidaanxin",
-        "title":"四大服务承诺安心居住保障"
+        "action_url": "https://m.ke.com/subject/24685.h5",
+        "id": "1177",
+        "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/48a6b1f93deb5786129b90cc3612016b.png",
+        "item_key": "zufangsidaanxin",
+        "title": "四大服务承诺安心居住保障"
       },
       {
-        "action_url":"https://m.ke.com/i/lecture/527.html",
-        "id":"309",
-        "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/a7168f248baa89beb58bd032cb5a848d.jpg",
-        "item_key":"haiwai",
-        "title":"置业伯明翰全球发布会"
+        "action_url": "https://m.ke.com/i/lecture/527.html",
+        "id": "309",
+        "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/a7168f248baa89beb58bd032cb5a848d.jpg",
+        "item_key": "haiwai",
+        "title": "置业伯明翰全球发布会"
       },
       {
-        "action_url":"https://m.ke.com/chuzu/bj/zufang/zhchd201805184114/?utm_source=bj&utm_campaign=cl_30days&utm_content=bk_remen",
-        "id":"741",
-        "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/87dd7e540fcbb8acdfb84eaa28422021.jpg",
-        "item_key":"thirtydaysbj",
-        "title":"租房上贝壳，最高免费住30天"
+        "action_url": "https://m.ke.com/chuzu/bj/zufang/zhchd201805184114/?utm_source=bj&utm_campaign=cl_30days&utm_content=bk_remen",
+        "id": "741",
+        "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/87dd7e540fcbb8acdfb84eaa28422021.jpg",
+        "item_key": "thirtydaysbj",
+        "title": "租房上贝壳，最高免费住30天"
       },
       {
-        "action_url":"http://m.vanlian.cn/activity-calc-lianjia?ext_source=LJSYZB",
-        "id":"52",
-        "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/8b0f7d0ae5f53a799e4cf389ff35df43.jpg",
-        "item_key":"kainianzhuangxiu",
-        "title":"买房后，装修费用如何不超支？"
+        "action_url": "http://m.vanlian.cn/activity-calc-lianjia?ext_source=LJSYZB",
+        "id": "52",
+        "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/8b0f7d0ae5f53a799e4cf389ff35df43.jpg",
+        "item_key": "kainianzhuangxiu",
+        "title": "买房后，装修费用如何不超支？"
       }
     ],
-    "title":"热门主题"
+    "title": "热门主题"
   },
-  "default_recommend":1,
-  "feelings":{
-    "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/98057c7c3d590c739d952e10a696c525.png.1080x705.png",
-    "slogan":"http://ke-image.ljcdn.com/materials/appindexconf/0aa92827d6c3d1d409421811e5e0f43a.png.822x234.png"
-  },
-  "icons":[
+  "cateTab": [
     {
-      "action_url":"lianjiabeike://erShou/list",
-      "id":"1",
-      "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/82235a3a487de895ed434d89800c8020.png",
-      "item_key":"ershoufang",
-      "title":"二手房"
+      "tabList": [
+        {
+          "txt1": "爆款三房",
+          "txt2": "320万",
+          "txt3": "尽享温馨生活",
+          "url": "https://m.ke.com/bj/fangjia"
+        },
+        {
+          "txt1": "限时特价",
+          "txt2": "疯降10万",
+          "txt3": "可领5万红包",
+          "url": "https://m.ke.com/bj/fangjia"
+        },
+        {
+          "txt1": "超值好房",
+          "txt2": "劲省45万",
+          "txt3": "省下一辆车",
+          "url": "https://m.ke.com/bj/fangjia"
+        }
+      ],
+      "title": "降价急售"
     },
     {
-      "action_url":"lianjiabeike://rentplat/main/home",
-      "id":"2",
-      "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/3747257d583348ec566bc39fe73c7f94.png",
-      "item_key":"zufang",
-      "title":"租房"
+      "tabList": [
+        {
+          "txt1": "钜实惠",
+          "txt2": "舒适两房",
+          "txt3": "总价280万",
+          "url": "https://m.ke.com/bj/fangjia"
+        },
+        {
+          "txt1": "改善好房",
+          "txt2": "大阳台三房",
+          "txt3": "全家住一起",
+          "url": "https://m.ke.com/bj/fangjia"
+        },
+        {
+          "txt1": "地铁笋盘",
+          "txt2": "首付38万",
+          "txt3": "安家大深圳",
+          "url": "https://m.ke.com/bj/fangjia"
+        }
+      ],
+      "title": "笋盘特惠"
     },
     {
-      "action_url":"lianjiabeike://newhouse/list",
-      "id":"3",
-      "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/b58544e9998b50b211a90de30a8c2776.png",
-      "item_key":"xinfang",
-      "title":"新房"
+      "tabList": [
+        {
+          "txt1": "好宜居！",
+          "txt2": "住4号线旁",
+          "txt3": "2-4房任选",
+          "url": "https://m.ke.com/bj/fangjia"
+        },
+        {
+          "txt1": "通透3房",
+          "txt2": "壹方城上盖",
+          "txt3": "450万起",
+          "url": "https://m.ke.com/bj/fangjia"
+        },
+        {
+          "txt1": "刚需必看",
+          "txt2": "首付49万",
+          "txt3": "非深户也能买",
+          "url": "https://m.ke.com/bj/fangjia"
+        }
+      ],
+      "title": "低价严选"
     },
     {
-      "action_url":"lianjiabeike://web/main?url=https://m.ke.com/you",
-      "id":"4",
-      "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/3834b65e7c361b882bea1a6b284842a4.png",
-      "item_key":"lvju",
-      "title":"旅居"
-    },
-    {
-      "action_url":"lianjiabeike://web/main?url=https://m.ke.com/i/",
-      "id":"5",
-      "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/ebc2fb26731047af9f7e3f356d3aa01c.png",
-      "item_key":"haiwai",
-      "title":"海外"
-    },
-    {
-      "action_url":"lianjiabeike://decorate/homepage?exhi_source=keapp_h_icon",
-      "id":"7",
-      "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/ba1c2a6fb01ee4a8bdac3c5effe37f75.png",
-      "item_key":"zhuangxiu",
-      "title":"装修"
-    },
-    {
-      "action_url":"lianjiabeike://sellHouse/main",
-      "id":"8",
-      "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/641a7fcd3c831f72bc4f4f63cca2268f.png",
-      "item_key":"maifang",
-      "title":"卖房"
-    },
-    {
-      "action_url":"lianjiabeike://community/list",
-      "id":"9",
-      "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/26efc8afb0da793208e495d899feca54.png",
-      "item_key":"xiaoqu",
-      "title":"找小区"
-    },
-    {
-      "action_url":"lianjiabeike://tradedSearch/list",
-      "id":"10",
-      "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/bf311175f1fa7bc6a3c88abd1372a386.png",
-      "item_key":"chengjiao",
-      "title":"查成交"
-    },
-    {
-      "action_url":"lianjiabeike://gujia/main",
-      "id":"11",
-      "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/8334ae435d12438ba58a1132c5b7b9cc.png",
-      "item_key":"gujia",
-      "title":"估价"
-    },
-    {
-      "action_url":"lianjiabeike://content/baike",
-      "id":"20",
-      "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/3834b65e7c361b882bea1a6b284842a4.png",
-      "item_key":"baike",
-      "title":"百科"
-    },
-    {
-      "action_url":"lianjiabeike://erShou/list?searchCondition=tt8",
-      "id":"27",
-      "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/b58544e9998b50b211a90de30a8c2776.png",
-      "item_key":"vr",
-      "title":"VR看房"
-    },
-    {
-      "action_url":"lianjiabeike://mapSearch/main?from_type=0",
-      "id":"28",
-      "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/3747257d583348ec566bc39fe73c7f94.png",
-      "item_key":"dituzhaofang",
-      "title":"地图找房"
-    },
-    {
-      "action_url":"lianjiabeike://erShou/list?searchCondition=su1",
-      "id":"29",
-      "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/ba1c2a6fb01ee4a8bdac3c5effe37f75.png",
-      "item_key":"jinditie",
-      "title":"近地铁"
-    },
-    {
-      "action_url":"lianjiabeike://erShou/list?searchCondition=mw1",
-      "id":"32",
-      "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/641a7fcd3c831f72bc4f4f63cca2268f.png",
-      "item_key":"manwunian",
-      "title":"满五年"
+      "tabList": [
+        {
+          "txt1": "二手",
+          "txt2": "西乡小户型",
+          "txt3": "青年置业首选",
+          "url": "https://m.lianjia.com/subject/24544.h5"
+        },
+        {
+          "txt1": "二手",
+          "txt2": "精装修好房",
+          "txt3": "两居室推荐",
+          "url": "https://m.lianjia.com/subject/24544.h5"
+        },
+        {
+          "txt1": "二手",
+          "txt2": "刚需好房",
+          "txt3": "买房不是难事",
+          "url": "https://m.lianjia.com/subject/24544.h5"
+        }
+      ],
+      "title": "今日必看"
     }
   ],
-  "market":{
-    "list":[
+  "default_recommend": 1,
+  "feelings": {
+    "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/98057c7c3d590c739d952e10a696c525.png.1080x705.png",
+    "slogan": "http://ke-image.ljcdn.com/materials/appindexconf/0aa92827d6c3d1d409421811e5e0f43a.png.822x234.png"
+  },
+  "icons": [
+    {
+      "action_url": "lianjiabeike://erShou/list",
+      "id": "1",
+      "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/82235a3a487de895ed434d89800c8020.png",
+      "item_key": "ershoufang",
+      "title": "二手房"
+    },
+    {
+      "action_url": "lianjiabeike://rentplat/main/home",
+      "id": "2",
+      "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/3747257d583348ec566bc39fe73c7f94.png",
+      "item_key": "zufang",
+      "title": "租房"
+    },
+    {
+      "action_url": "lianjiabeike://newhouse/list",
+      "id": "3",
+      "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/b58544e9998b50b211a90de30a8c2776.png",
+      "item_key": "xinfang",
+      "title": "新房"
+    },
+    {
+      "action_url": "lianjiabeike://web/main?url=https://m.ke.com/you",
+      "id": "4",
+      "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/3834b65e7c361b882bea1a6b284842a4.png",
+      "item_key": "lvju",
+      "title": "旅居"
+    },
+    {
+      "action_url": "lianjiabeike://web/main?url=https://m.ke.com/i/",
+      "id": "5",
+      "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/ebc2fb26731047af9f7e3f356d3aa01c.png",
+      "item_key": "haiwai",
+      "title": "海外"
+    },
+    {
+      "action_url": "lianjiabeike://decorate/homepage?exhi_source=keapp_h_icon",
+      "id": "7",
+      "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/ba1c2a6fb01ee4a8bdac3c5effe37f75.png",
+      "item_key": "zhuangxiu",
+      "title": "装修"
+    },
+    {
+      "action_url": "lianjiabeike://sellHouse/main",
+      "id": "8",
+      "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/641a7fcd3c831f72bc4f4f63cca2268f.png",
+      "item_key": "maifang",
+      "title": "卖房"
+    },
+    {
+      "action_url": "lianjiabeike://community/list",
+      "id": "9",
+      "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/26efc8afb0da793208e495d899feca54.png",
+      "item_key": "xiaoqu",
+      "title": "找小区"
+    },
+    {
+      "action_url": "lianjiabeike://tradedSearch/list",
+      "id": "10",
+      "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/bf311175f1fa7bc6a3c88abd1372a386.png",
+      "item_key": "chengjiao",
+      "title": "查成交"
+    },
+    {
+      "action_url": "lianjiabeike://gujia/main",
+      "id": "11",
+      "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/8334ae435d12438ba58a1132c5b7b9cc.png",
+      "item_key": "gujia",
+      "title": "估价"
+    },
+    {
+      "action_url": "lianjiabeike://content/baike",
+      "id": "20",
+      "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/3834b65e7c361b882bea1a6b284842a4.png",
+      "item_key": "baike",
+      "title": "百科"
+    },
+    {
+      "action_url": "lianjiabeike://erShou/list?searchCondition=tt8",
+      "id": "27",
+      "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/b58544e9998b50b211a90de30a8c2776.png",
+      "item_key": "vr",
+      "title": "VR看房"
+    },
+    {
+      "action_url": "lianjiabeike://mapSearch/main?from_type=0",
+      "id": "28",
+      "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/3747257d583348ec566bc39fe73c7f94.png",
+      "item_key": "dituzhaofang",
+      "title": "地图找房"
+    },
+    {
+      "action_url": "lianjiabeike://erShou/list?searchCondition=su1",
+      "id": "29",
+      "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/ba1c2a6fb01ee4a8bdac3c5effe37f75.png",
+      "item_key": "jinditie",
+      "title": "近地铁"
+    },
+    {
+      "action_url": "lianjiabeike://erShou/list?searchCondition=mw1",
+      "id": "32",
+      "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/641a7fcd3c831f72bc4f4f63cca2268f.png",
+      "item_key": "manwunian",
+      "title": "满五年"
+    }
+  ],
+  "market": {
+    "list": [
       {
-        "count":"62459",
-        "name":"全市均价",
-        "unit":"元/平"
+        "count": "62459",
+        "name": "全市均价",
+        "unit": "元/平"
       },
       {
-        "count":"303",
-        "name":"昨日成交",
-        "unit":"套"
+        "count": "303",
+        "name": "昨日成交",
+        "unit": "套"
       }
     ],
-    "m_url":"https://m.ke.com/bj/fangjia",
-    "more_desc":"查看更多",
-    "title":"贝壳指数"
+    "m_url": "https://m.ke.com/bj/fangjia",
+    "more_desc": "查看更多",
+    "title": "贝壳指数"
   },
-  "search_bar_placeholder":"你想住在哪？",
-  "sequence":[
-    "myhouse",
-    "vr_info",
-    "market",
-    "focus_house",
-    "tools",
-    "map",
-    "seek_house_in_other_place",
-    "activities",
-    "topics"
-  ],
-  "topics":[
+  "search_bar_placeholder": "你想住在哪？",
+  "topics": [
     {
-      "item_key":"ershoudaogou",
-      "list":[
+      "item_key": "ershoudaogou",
+      "list": [
         {
-          "action_url":"https://m.lianjia.com/subject/24544.h5?dgsource=appshouyezt",
-          "id":"2686",
-          "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/52c9dfb8a0a3d00f3b10377f26c17394.jpg",
-          "item_key":"ershoudaogou",
-          "subtitle":"低总价上车三小区值得买",
-          "tag":"热门",
-          "title":"上半年链家成交回顾"
+          "action_url": "https://m.lianjia.com/subject/24544.h5?dgsource=appshouyezt",
+          "id": "2686",
+          "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/52c9dfb8a0a3d00f3b10377f26c17394.jpg",
+          "item_key": "ershoudaogou",
+          "subtitle": "低总价上车三小区值得买",
+          "tag": "热门",
+          "title": "上半年链家成交回顾"
         },
         {
-          "action_url":"https://m.lianjia.com/subject/24666.h5?dgsource=appshouyezt",
-          "id":"2684",
-          "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/233be5cb687f7b043fa97d95a63b53f3.jpg",
-          "item_key":"ershoudaogou",
-          "subtitle":"上半年各区成交热门小区",
-          "title":"各城区成交盘点"
+          "action_url": "https://m.lianjia.com/subject/24666.h5?dgsource=appshouyezt",
+          "id": "2684",
+          "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/233be5cb687f7b043fa97d95a63b53f3.jpg",
+          "item_key": "ershoudaogou",
+          "subtitle": "上半年各区成交热门小区",
+          "title": "各城区成交盘点"
         },
         {
-          "action_url":"https://m.lianjia.com/subject/24342.h5?dgsource=appshouyezt",
-          "id":"2685",
-          "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/99b7e48ed7c05b5b422466c8bd5447dd.jpg",
-          "item_key":"ershoudaogou",
-          "subtitle":"选自6月热卖小区",
-          "title":"低于小区均价房源"
+          "action_url": "https://m.lianjia.com/subject/24342.h5?dgsource=appshouyezt",
+          "id": "2685",
+          "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/99b7e48ed7c05b5b422466c8bd5447dd.jpg",
+          "item_key": "ershoudaogou",
+          "subtitle": "选自6月热卖小区",
+          "title": "低于小区均价房源"
         },
         {
-          "action_url":"https://m.lianjia.com/subject/24317.h5?dgsource=appshouyezt",
-          "id":"2687",
-          "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/47f8145e0f428225b3eaf2fa2d90feb8.jpg",
-          "item_key":"ershoudaogou",
-          "subtitle":"这个小区成交最多",
-          "title":"6月链家成交揭秘"
+          "action_url": "https://m.lianjia.com/subject/24317.h5?dgsource=appshouyezt",
+          "id": "2687",
+          "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/47f8145e0f428225b3eaf2fa2d90feb8.jpg",
+          "item_key": "ershoudaogou",
+          "subtitle": "这个小区成交最多",
+          "title": "6月链家成交揭秘"
         }
       ],
-      "title":"二手精选"
+      "title": "二手精选"
     },
     {
-      "item_key":"zulin",
-      "list":[
+      "item_key": "zulin",
+      "list": [
         {
-          "action_url":"https://m.ke.com/subject/24217.h5/?utm_source=zhannei&utm_campaign=bjlaiwojiakanqiuba&utm_content=lj_rentsection&dgsource=appshouyezt",
-          "id":"6034",
-          "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/a9ad3b85ba30637112e69e9e41e6f2f0.jpg",
-          "item_key":"zulin",
-          "subtitle":"来我家看球吧",
-          "title":"明星看球同款公寓"
+          "action_url": "https://m.ke.com/subject/24217.h5/?utm_source=zhannei&utm_campaign=bjlaiwojiakanqiuba&utm_content=lj_rentsection&dgsource=appshouyezt",
+          "id": "6034",
+          "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/a9ad3b85ba30637112e69e9e41e6f2f0.jpg",
+          "item_key": "zulin",
+          "subtitle": "来我家看球吧",
+          "title": "明星看球同款公寓"
         },
         {
-          "action_url":"https://m.ke.com/subject/24357.h5?dgsource=appshouyezt",
-          "id":"6126",
-          "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/a60b924cd1a59f5fd147136aa8914b57.png",
-          "item_key":"zulin",
-          "subtitle":"生活就该有MO有样",
-          "title":"魔方公寓入驻贝壳"
+          "action_url": "https://m.ke.com/subject/24357.h5?dgsource=appshouyezt",
+          "id": "6126",
+          "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/a60b924cd1a59f5fd147136aa8914b57.png",
+          "item_key": "zulin",
+          "subtitle": "生活就该有MO有样",
+          "title": "魔方公寓入驻贝壳"
         },
         {
-          "action_url":"https://m.ke.com/chuzu/bj/zufang/rmp1/?utm_source=zhannei&utm_campaign=bjyuezutgf_2&utm_content=bk_rentsection&dgsource=appshouyezt",
-          "id":"4653",
-          "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/4f33abbf06fdbe1d560955928e0b6726.jpg",
-          "item_key":"zulin",
-          "subtitle":"最短可租一个月",
-          "title":"租期灵活不纠结"
+          "action_url": "https://m.ke.com/chuzu/bj/zufang/rmp1/?utm_source=zhannei&utm_campaign=bjyuezutgf_2&utm_content=bk_rentsection&dgsource=appshouyezt",
+          "id": "4653",
+          "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/4f33abbf06fdbe1d560955928e0b6726.jpg",
+          "item_key": "zulin",
+          "subtitle": "最短可租一个月",
+          "title": "租期灵活不纠结"
         }
       ],
-      "title":"租一个家"
+      "title": "租一个家"
     },
     {
-      "item_key":"xinfanyouxuan",
-      "list":[
+      "item_key": "xinfanyouxuan",
+      "list": [
         {
-          "action_url":"http://m.lianjia.com/bj/loupan/zhuanti/5981.html?dgsource=appshouyezt",
-          "id":"6130",
-          "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/c3f41e2af2a957543e53decb86175f09.jpg",
-          "item_key":"xinfanyouxuan",
-          "subtitle":"网红盘将入市",
-          "tag":"推荐",
-          "title":"南城新格局"
+          "action_url": "http://m.lianjia.com/bj/loupan/zhuanti/5981.html?dgsource=appshouyezt",
+          "id": "6130",
+          "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/c3f41e2af2a957543e53decb86175f09.jpg",
+          "item_key": "xinfanyouxuan",
+          "subtitle": "网红盘将入市",
+          "tag": "推荐",
+          "title": "南城新格局"
         },
         {
-          "action_url":"http://m.lianjia.com/bj/loupan/zhuanti/5760.html?dgsource=appshouyezt",
-          "id":"6129",
-          "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/e52d3ba069eba9719547a233dc9cf195.jpg",
-          "item_key":"xinfanyouxuan",
-          "subtitle":"北京地区上半年",
-          "title":"成交TOP10"
+          "action_url": "http://m.lianjia.com/bj/loupan/zhuanti/5760.html?dgsource=appshouyezt",
+          "id": "6129",
+          "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/e52d3ba069eba9719547a233dc9cf195.jpg",
+          "item_key": "xinfanyouxuan",
+          "subtitle": "北京地区上半年",
+          "title": "成交TOP10"
         },
         {
-          "action_url":"http://m.lianjia.com/bj/loupan/zhuanti/5878.html?dgsource=appshouyezt",
-          "id":"5534",
-          "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/3d930d91584340c26795866be54b6c46.jpg",
-          "item_key":"xinfanyouxuan",
-          "subtitle":"甄选首付300万新房",
-          "title":"一小时通勤国贸"
+          "action_url": "http://m.lianjia.com/bj/loupan/zhuanti/5878.html?dgsource=appshouyezt",
+          "id": "5534",
+          "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/3d930d91584340c26795866be54b6c46.jpg",
+          "item_key": "xinfanyouxuan",
+          "subtitle": "甄选首付300万新房",
+          "title": "一小时通勤国贸"
         },
         {
-          "action_url":"http://m.lianjia.com/bj/loupan/zhuanti/5940.html?dgsource=appshouyezt",
-          "id":"5535",
-          "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/66e402a6b4d0bccc362713c9d90140d9.jpg",
-          "item_key":"xinfanyouxuan",
-          "subtitle":"北七家450万",
-          "title":"限价房入市"
+          "action_url": "http://m.lianjia.com/bj/loupan/zhuanti/5940.html?dgsource=appshouyezt",
+          "id": "5535",
+          "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/66e402a6b4d0bccc362713c9d90140d9.jpg",
+          "item_key": "xinfanyouxuan",
+          "subtitle": "北七家450万",
+          "title": "限价房入市"
         },
         {
-          "action_url":"http://m.lianjia.com/bj/loupan/zhuanti/5898.html?dgsource=appshouyezt",
-          "id":"4963",
-          "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/f6948580a79982a24a8ef3620df4fe9e.jpg",
-          "item_key":"xinfanyouxuan",
-          "subtitle":"一家三口住房不拥挤",
-          "title":"买房攻略之"
+          "action_url": "http://m.lianjia.com/bj/loupan/zhuanti/5898.html?dgsource=appshouyezt",
+          "id": "4963",
+          "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/f6948580a79982a24a8ef3620df4fe9e.jpg",
+          "item_key": "xinfanyouxuan",
+          "subtitle": "一家三口住房不拥挤",
+          "title": "买房攻略之"
         }
       ],
-      "title":"新房优选"
+      "title": "新房优选"
     },
     {
-      "item_key":"lvjuzhuanti",
-      "list":[
+      "item_key": "lvjuzhuanti",
+      "list": [
         {
-          "action_url":"https://m.lianjia.com/you/ynxsbn/shenghuo/673495.html?dgsource=appshouyezt",
-          "id":"2740",
-          "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/e7c74f0fb2a1894fa7b82cbe90001fed.jpg",
-          "item_key":"lvjuzhuanti",
-          "subtitle":"多种套餐组合，等你来玩",
-          "tag":"旅行优选",
-          "title":"云南自在毕业季"
+          "action_url": "https://m.lianjia.com/you/ynxsbn/shenghuo/673495.html?dgsource=appshouyezt",
+          "id": "2740",
+          "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/e7c74f0fb2a1894fa7b82cbe90001fed.jpg",
+          "item_key": "lvjuzhuanti",
+          "subtitle": "多种套餐组合，等你来玩",
+          "tag": "旅行优选",
+          "title": "云南自在毕业季"
         },
         {
-          "action_url":"https://m.lianjia.com/you/hnsan/shenghuo/656055.html?dgsource=appshouyezt",
-          "id":"2742",
-          "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/6eb9abbbf89ff962d811e142f5282d0b.jpg",
-          "item_key":"lvjuzhuanti",
-          "subtitle":"三亚优质度假楼盘推荐",
-          "title":"有海的夏天才完整"
+          "action_url": "https://m.lianjia.com/you/hnsan/shenghuo/656055.html?dgsource=appshouyezt",
+          "id": "2742",
+          "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/6eb9abbbf89ff962d811e142f5282d0b.jpg",
+          "item_key": "lvjuzhuanti",
+          "subtitle": "三亚优质度假楼盘推荐",
+          "title": "有海的夏天才完整"
         },
         {
-          "action_url":"https://m.lianjia.com/you/hnhk/shenghuo/674217.html?dgsource=appshouyezt",
-          "id":"3373",
-          "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/337d4e45eca7f56b4fed0220e9b84822.jpg",
-          "item_key":"lvjuzhuanti",
-          "subtitle":"海南三亚等你pick",
-          "title":"自在暑期放“价”"
+          "action_url": "https://m.lianjia.com/you/hnhk/shenghuo/674217.html?dgsource=appshouyezt",
+          "id": "3373",
+          "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/337d4e45eca7f56b4fed0220e9b84822.jpg",
+          "item_key": "lvjuzhuanti",
+          "subtitle": "海南三亚等你pick",
+          "title": "自在暑期放“价”"
         },
         {
-          "action_url":"https://m.lianjia.com/you/hncm/shenghuo/671815.html?dgsource=appshouyezt",
-          "id":"2688",
-          "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/e900d2c0f2a5b43f3e1d21079c36d6a3.jpg",
-          "item_key":"lvjuzhuanti",
-          "subtitle":"卓越·盈滨悦府",
-          "title":"半岛双海精工私邸"
+          "action_url": "https://m.lianjia.com/you/hncm/shenghuo/671815.html?dgsource=appshouyezt",
+          "id": "2688",
+          "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/e900d2c0f2a5b43f3e1d21079c36d6a3.jpg",
+          "item_key": "lvjuzhuanti",
+          "subtitle": "卓越·盈滨悦府",
+          "title": "半岛双海精工私邸"
         },
         {
-          "action_url":"https://m.lianjia.com/you/hnwn/shenghuo/649549.html?dgsource=appshouyezt",
-          "id":"2744",
-          "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/5ed0e2cb049cacca0a5789850b7d53ff.jpg",
-          "item_key":"lvjuzhuanti",
-          "subtitle":"给妈妈的一份惊喜",
-          "title":"陵水、万宁楼盘集锦"
+          "action_url": "https://m.lianjia.com/you/hnwn/shenghuo/649549.html?dgsource=appshouyezt",
+          "id": "2744",
+          "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/5ed0e2cb049cacca0a5789850b7d53ff.jpg",
+          "item_key": "lvjuzhuanti",
+          "subtitle": "给妈妈的一份惊喜",
+          "title": "陵水、万宁楼盘集锦"
         }
       ],
-      "title":"自在旅居"
+      "title": "自在旅居"
     },
     {
-      "item_key":"haiwaizhiye",
-      "list":[
+      "item_key": "haiwaizhiye",
+      "list": [
         {
-          "action_url":"https://m.lianjia.com/subject/23883.h5?dgsource=appshouyezt",
-          "id":"5885",
-          "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/07b32778d06f77d3cbf3d64aea680ce6.jpg",
-          "item_key":"haiwaizhiye",
-          "subtitle":"一次让您看个爽",
-          "title":"泰国VR房源大合集"
+          "action_url": "https://m.lianjia.com/subject/23883.h5?dgsource=appshouyezt",
+          "id": "5885",
+          "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/07b32778d06f77d3cbf3d64aea680ce6.jpg",
+          "item_key": "haiwaizhiye",
+          "subtitle": "一次让您看个爽",
+          "title": "泰国VR房源大合集"
         },
         {
-          "action_url":"https://m.lianjia.com/subject/21933.h5?dgsource=appshouyezt",
-          "id":"5258",
-          "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/f06643b0e06974bf76ef8a9e3763eb3c.jpg",
-          "item_key":"haiwaizhiye",
-          "subtitle":"认购即送泰国游！",
-          "title":"泰国瑞泽公馆"
+          "action_url": "https://m.lianjia.com/subject/21933.h5?dgsource=appshouyezt",
+          "id": "5258",
+          "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/f06643b0e06974bf76ef8a9e3763eb3c.jpg",
+          "item_key": "haiwaizhiye",
+          "subtitle": "认购即送泰国游！",
+          "title": "泰国瑞泽公馆"
         },
         {
-          "action_url":"https://m.lianjia.com/subject/22095.h5?dgsource=appshouyezt",
-          "id":"5257",
-          "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/adc561673c9de7453cddba1681c11507.jpg",
-          "item_key":"haiwaizhiye",
-          "subtitle":"献给最爱生活的你",
-          "title":"澳洲品质别墅"
+          "action_url": "https://m.lianjia.com/subject/22095.h5?dgsource=appshouyezt",
+          "id": "5257",
+          "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/adc561673c9de7453cddba1681c11507.jpg",
+          "item_key": "haiwaizhiye",
+          "subtitle": "献给最爱生活的你",
+          "title": "澳洲品质别墅"
         }
       ],
-      "title":"海外置业"
+      "title": "海外置业"
     },
     {
-      "item_key":"home",
-      "list":[
+      "item_key": "home",
+      "list": [
         {
-          "action_url":"https://m.ke.com/home/bj/zhuanti/beikezhuangxiulaile?dgsource=appshouyezt",
-          "id":"6124",
-          "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/cb2aae922070bcf18d237aba229cb616.jpg",
-          "item_key":"home",
-          "subtitle":"为您打造适合自己的家",
-          "title":"贝壳装修来了"
+          "action_url": "https://m.ke.com/home/bj/zhuanti/beikezhuangxiulaile?dgsource=appshouyezt",
+          "id": "6124",
+          "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/cb2aae922070bcf18d237aba229cb616.jpg",
+          "item_key": "home",
+          "subtitle": "为您打造适合自己的家",
+          "title": "贝壳装修来了"
         },
         {
-          "action_url":"https://m.ke.com/home/bj/chengnuoshu?dgsource=appshouyezt",
-          "id":"6125",
-          "img_url":"http://ke-image.ljcdn.com/materials/appindexconf/5093f14ec9312b9275df66ff530bffe6.png",
-          "item_key":"home",
-          "subtitle":"三大保障安心等交付",
-          "title":"装修上贝壳"
+          "action_url": "https://m.ke.com/home/bj/chengnuoshu?dgsource=appshouyezt",
+          "id": "6125",
+          "img_url": "http://ke-image.ljcdn.com/materials/appindexconf/5093f14ec9312b9275df66ff530bffe6.png",
+          "item_key": "home",
+          "subtitle": "三大保障安心等交付",
+          "title": "装修上贝壳"
         }
       ],
-      "title":"安心装修"
+      "title": "安心装修"
     }
   ]
 }

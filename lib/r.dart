@@ -1,4 +1,6 @@
 class R {
+  /// ![](http://127.0.0.1:9227/assets/img/bg_alert.png)
+  static final String assetsImgBgAlert = 'assets/img/bg_alert.png';
   /// ![](http://127.0.0.1:9227/assets/img/bg_splash.png)
   static final String assetsImgBgSplash = 'assets/img/bg_splash.png';
   /// ![](http://127.0.0.1:9227/assets/img/empty.png)

@@ -55,6 +55,7 @@ flutter:
   assets:
     # assets-generator-begin
     # assets/img/*
+    - assets/img/bg_alert.png
     - assets/img/bg_splash.png
     - assets/img/empty.png
     - assets/img/icon_account_normal.png

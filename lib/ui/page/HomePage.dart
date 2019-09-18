@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:bbhouse/bloc/index_bloc.dart';
 import 'package:bbhouse/comm/c.dart';
 import 'package:bbhouse/data/HomeModel.dart';
+import 'package:bbhouse/ui/page/HomePageCateTab.dart';
 import 'package:bbhouse/ui/page/HomePageZhishu.dart';
 import 'package:bbhouse/ui/page/WebViewPage.dart';
 import 'package:bbhouse/ui/widget/marquee/flutter_marquee.dart';
@@ -88,6 +89,7 @@ class _HomePageState extends State<HomePage> {
                     _buildIconsGridList(model.icons),
                     _createSlogan(),
                     HomePageZhishu(),
+                    HomePageCateTab(model.cateTab),
                   ],
                 ),
               );
@@ -166,11 +168,10 @@ class _HomePageState extends State<HomePage> {
                 SizedBox(width: 10),
                 Expanded(
                   child: FlutterMarquee(
-                    texts: ["龙珠花园", "阳光花园", "尚水天成", "万象天成"].toList(),
-                    seletedTextColor: C.app_gray,
-                    textColor: C.app_gray,
+                    children: ["龙珠花园", "阳光花园", "尚水天成", "万象天成"].map((item) {
+                      return Text(item, style: TextStyle(fontSize: 17, color: C.app_gray), softWrap: true, overflow: TextOverflow.fade);
+                    }).toList(),
                     duration: 4,
-                    textSize: 17,
                     itemDuration: 1200,
                     singleLine: true,
                   ),
