@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:bbhouse/comm/c.dart';
 import 'package:bbhouse/data/HomeModel.dart';
 import 'package:bbhouse/ui/widget/page_route_builders.dart';
-import 'package:bbhouse/util/utils.dart';
 import 'package:flutter/material.dart';
 
 import '../../r.dart';

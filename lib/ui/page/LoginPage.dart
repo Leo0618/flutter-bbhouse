@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:bbhouse/bloc/index_bloc.dart';
 import 'package:bbhouse/comm/c.dart';
 import 'package:bbhouse/comm/const.dart';
-import 'package:bbhouse/data/model.dart';
+import 'package:bbhouse/data/UserInfoModel.dart';
 import 'package:bbhouse/generated/i18n.dart';
 import 'package:bbhouse/ui/widget/app_dialog.dart';
 import 'package:bbhouse/util/util_sp.dart';
