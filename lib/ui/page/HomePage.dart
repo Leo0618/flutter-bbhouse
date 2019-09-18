@@ -145,8 +145,8 @@ class _HomePageState extends State<HomePage> {
             child: Column(
               children: <Widget>[
                 Expanded(child: FadeInImage.assetNetwork(placeholder: R.assetsImgImgDefaultSquarSmall, image: item.imgUrl)),
-                SizedBox(height: 7),
-                Text(item.title, style: TextStyle(color: Color(0xFF333333), fontSize: 10)),
+                SizedBox(height: 5),
+                Text(item.title, style: TextStyle(color: Color(0xFF333333), fontSize: 12)),
               ],
             ),
             onTap: () => Utils.wait(item.title),
