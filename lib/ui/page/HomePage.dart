@@ -18,6 +18,8 @@ import 'package:flutter_easyrefresh/ball_pulse_header.dart';
 import 'package:flutter_easyrefresh/easy_refresh.dart';
 
 import '../../r.dart';
+import 'HomePageActivities.dart';
+import 'HomePageZhuanshu.dart';
 
 /// function: HomePage
 /// <p>Created by Leo on 2019/9/16.</p>
@@ -94,6 +96,8 @@ class _HomePageState extends State<HomePage> {
                     HomePageCateTab(model.cateTab),
                     HomePageHotTopic(),
                     HomePageNews(),
+                    HomePageActivities(),
+                    HomePageZhuanshu(),
                   ],
                 ),
               );
