@@ -1,6 +1,9 @@
+import 'package:bbhouse/bloc/index_bloc.dart';
 import 'package:bbhouse/comm/const.dart';
 import 'package:bbhouse/util/util_sp.dart';
 import 'package:flutter/material.dart';
+
+import 'UserInfoModel.dart';
 
 /// function: user_info_manager
 /// <p>Created by Leo on 2019/5/21.</p>
@@ -25,8 +28,8 @@ class UserInfoManager {
 
   /// 退出登录
   static void logout(BuildContext context) {
-    SPUtil.putString(Const.KEY_USER_INFO, '');
-//    UserInfoModel model = new UserInfoModel(userInfo: UserInfo(), userConfig: UserConfig());
-//    BlocProvider.of<ApplicationBloc>(context).sendAppEvent(model);
+    SPUtil.putString(Const.KEY_USER_INFO, null);
+    UserInfoModel model = new UserInfoModel(phone: null, password: null);
+    BlocProvider.of<ApplicationBloc>(context).sendAppEvent(model);
   }
 }

@@ -5,7 +5,7 @@
   "main_tab_news":"消息",
   "main_tab_account":"我的",
   "text_login":"登录",
-  "hint_login_input_account":"请输入手机号码",
-  "hint_login_input_checkcode":"请输入密码",
+  "hint_login_input_account":"请输入正确的手机号码",
+  "hint_login_input_checkcode":"请输入至少6位数密码",
   "hint_login_success":"登录成功"
 }

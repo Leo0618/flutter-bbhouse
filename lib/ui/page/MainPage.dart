@@ -40,7 +40,7 @@ class _MainPageState extends State<MainPage> {
       BlocProvider(child: new HomePage(), bloc: new HomeBloc()),
       FeedPage(),
       NewsPage(),
-      AccountPage(),
+      BlocProvider(child: new AccountPage(), bloc: new MineBloc()),
     ];
   }
 

@@ -59,6 +59,7 @@ flutter:
     # assets/img/*
     - assets/img/bg_alert.png
     - assets/img/bg_splash.png
+    - assets/img/default_avatar.png
     - assets/img/empty.png
     - assets/img/feeda1.png
     - assets/img/feeda2.png
@@ -129,6 +130,9 @@ flutter:
     - assets/img/img_default_squar_large.png
     - assets/img/img_default_squar_small.png
     - assets/img/img_default_width.png
+    - assets/img/mine1.png
+    - assets/img/mine2.png
+    - assets/img/mine3.png
     - assets/img/news_empty.png
     - assets/img/slogan.png
     - assets/img/zhishu.png

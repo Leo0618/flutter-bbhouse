@@ -3,6 +3,8 @@ class R {
   static final String assetsImgBgAlert = 'assets/img/bg_alert.png';
   /// ![](http://127.0.0.1:9227/assets/img/bg_splash.png)
   static final String assetsImgBgSplash = 'assets/img/bg_splash.png';
+  /// ![](http://127.0.0.1:9227/assets/img/default_avatar.png)
+  static final String assetsImgDefaultAvatar = 'assets/img/default_avatar.png';
   /// ![](http://127.0.0.1:9227/assets/img/empty.png)
   static final String assetsImgEmpty = 'assets/img/empty.png';
   /// ![](http://127.0.0.1:9227/assets/img/feeda1.png)
@@ -143,6 +145,12 @@ class R {
   static final String assetsImgImgDefaultSquarSmall = 'assets/img/img_default_squar_small.png';
   /// ![](http://127.0.0.1:9227/assets/img/img_default_width.png)
   static final String assetsImgImgDefaultWidth = 'assets/img/img_default_width.png';
+  /// ![](http://127.0.0.1:9227/assets/img/mine1.png)
+  static final String assetsImgMine1 = 'assets/img/mine1.png';
+  /// ![](http://127.0.0.1:9227/assets/img/mine2.png)
+  static final String assetsImgMine2 = 'assets/img/mine2.png';
+  /// ![](http://127.0.0.1:9227/assets/img/mine3.png)
+  static final String assetsImgMine3 = 'assets/img/mine3.png';
   /// ![](http://127.0.0.1:9227/assets/img/news_empty.png)
   static final String assetsImgNewsEmpty = 'assets/img/news_empty.png';
   /// ![](http://127.0.0.1:9227/assets/img/slogan.png)

@@ -34,11 +34,11 @@ class _LoginPage extends State<LoginPage> {
   String password;
 
   void _loginNow() {
-    if (phone == null || phone.length == 0) {
+    if (phone == null || phone.length < 11) {
       Utils.toast(S.current.hint_login_input_account);
       return;
     }
-    if (password == null || password.length == 0) {
+    if (password == null || password.length < 6) {
       Utils.toast(S.current.hint_login_input_checkcode);
       return;
     }

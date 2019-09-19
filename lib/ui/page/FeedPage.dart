@@ -90,7 +90,7 @@ class _FeedPageState extends State<FeedPage> with SingleTickerProviderStateMixin
               children: <Widget>[
                 SizedBox(height: 10),
                 Image.asset(item, fit: BoxFit.fitWidth, width: MediaQueryData.fromWindow(ui.window).size.width),
-                Container(height: 0.5, color: Color(0xFFDDDDDD), margin: EdgeInsets.only(top: 10)),
+                Container(height: 0.5, color: Color(0xFFDDDDDD), margin: EdgeInsets.only(top: 10, left: 20, right: 20)),
               ],
             ),
             onTap: () => Navigator.of(context).push(RouteBuilders.slideFromRight(WebViewPage('https://m.lianjia.com/subject/24666.h5'))),

@@ -1,4 +1,5 @@
 import 'package:bbhouse/data/HomeModel.dart';
+import 'package:bbhouse/data/UserInfoModel.dart';
 import 'package:bbhouse/data/data_repo.dart';
 import 'package:rxdart/rxdart.dart';
 
@@ -38,5 +39,21 @@ class HomeBloc implements BlocBase {
   @override
   void dispose() {
     _homeubject.close();
+  }
+}
+
+/// MineBloc
+class MineBloc extends BlocBase {
+  // 用户登录信息
+  BehaviorSubject<UserInfoModel> _userInfoSubject = BehaviorSubject<UserInfoModel>();
+
+  Sink<UserInfoModel> get userInfoSink => _userInfoSubject.sink;
+
+  Stream<UserInfoModel> get userInfoStream => _userInfoSubject.stream;
+
+  // dispose
+  @override
+  void dispose() {
+    _userInfoSubject.close();
   }
 }

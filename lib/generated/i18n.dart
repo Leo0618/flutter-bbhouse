@@ -22,8 +22,8 @@ class S implements WidgetsLocalizations {
   TextDirection get textDirection => TextDirection.ltr;
 
   String get app_name => "贝贝找房";
-  String get hint_login_input_account => "请输入手机号码";
-  String get hint_login_input_checkcode => "请输入密码";
+  String get hint_login_input_account => "请输入正确的手机号码";
+  String get hint_login_input_checkcode => "请输入至少6位数密码";
   String get hint_login_success => "登录成功";
   String get main_tab_account => "我的";
   String get main_tab_feedlist => "看点";
