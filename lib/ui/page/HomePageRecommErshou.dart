@@ -68,6 +68,7 @@ class HomePageRecommErshou extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
+        Container(width: double.infinity, height: 0.5, color: Color(0xFFDDDDDD)),
         _buildListItem(
           context,
           R.assetsImgHouse1,
@@ -111,7 +112,7 @@ class HomePageRecommErshou extends StatelessWidget {
     return InkWell(
       child: Column(
         children: <Widget>[
-          Container(width: double.infinity, height: 0.5, color: Color(0xFFDDDDDD), margin: EdgeInsets.only(top: 15, bottom: 15)),
+          SizedBox(height: 15),
           Row(
             children: <Widget>[
               Expanded(child: Image.asset(img), flex: 1),
@@ -162,6 +163,7 @@ class HomePageRecommErshou extends StatelessWidget {
                   flex: 2),
             ],
           ),
+          Container(width: double.infinity, height: 0.5, color: Color(0xFFDDDDDD), margin: EdgeInsets.only(top: 15)),
         ],
       ),
       onTap: () => Navigator.of(context).push(RouteBuilders.slideFromRight(WebViewPage('https://m.lianjia.com/subject/24666.h5'))),

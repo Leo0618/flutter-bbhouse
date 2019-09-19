@@ -18,6 +18,8 @@ dependencies:
   rxdart: ^0.22.2
   # dio
   dio: ^2.1.6
+  # dio_cookie_manager
+  dio_cookie_manager: ^0.0.1
   # cookie_jar
   cookie_jar: ^1.0.1
   # package_info
@@ -71,6 +73,9 @@ flutter:
     - assets/img/homexin3.png
     - assets/img/homeZhuansu1.png
     - assets/img/homeZhuansu2.png
+    - assets/img/homezu1.png
+    - assets/img/homezu2.png
+    - assets/img/homezu3.png
     - assets/img/hot_ic1.png
     - assets/img/hot_ic2.png
     - assets/img/hot_ic3.png
@@ -80,6 +85,9 @@ flutter:
     - assets/img/house4.png
     - assets/img/house5.png
     - assets/img/house6.png
+    - assets/img/house7.png
+    - assets/img/house8.png
+    - assets/img/house9.png
     - assets/img/icon_account_normal.png
     - assets/img/icon_account_selected.png
     - assets/img/icon_feedlist_normal.png

@@ -7,9 +7,9 @@ import 'package:flutter/material.dart';
 import '../../r.dart';
 import 'WebViewPage.dart';
 
-/// function: HomePageRecommXin
+/// function: HomePageRecommZu
 /// <p>Created by Leo on 2019/9/18.</p>
-class HomePageRecommXin extends StatelessWidget {
+class HomePageRecommZu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -18,27 +18,27 @@ class HomePageRecommXin extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text('为你推荐新房', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.black)),
+          Text('为你推荐租房', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.black)),
           SizedBox(height: 10),
           Row(
             children: <Widget>[
               Expanded(
                   child: InkWell(
-                    child: Image.asset(R.assetsImgHomexin1),
+                    child: Image.asset(R.assetsImgHomezu1),
                     onTap: () => Navigator.of(context).push(RouteBuilders.slideFromRight(WebViewPage('https://m.lianjia.com/subject/24666.h5'))),
                   ),
                   flex: 1),
               SizedBox(width: 5),
               Expanded(
                   child: InkWell(
-                    child: Image.asset(R.assetsImgHomexin2),
+                    child: Image.asset(R.assetsImgHomezu2),
                     onTap: () => Navigator.of(context).push(RouteBuilders.slideFromRight(WebViewPage('https://m.lianjia.com/subject/24666.h5'))),
                   ),
                   flex: 1),
               SizedBox(width: 5),
               Expanded(
                   child: InkWell(
-                    child: Image.asset(R.assetsImgHomexin3),
+                    child: Image.asset(R.assetsImgHomezu3),
                     onTap: () => Navigator.of(context).push(RouteBuilders.slideFromRight(WebViewPage('https://m.lianjia.com/subject/24666.h5'))),
                   ),
                   flex: 1),
@@ -55,9 +55,9 @@ class HomePageRecommXin extends StatelessWidget {
               ),
               margin: EdgeInsets.only(top: 20),
               padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
-              child: Center(child: Text('更多新房', style: TextStyle(fontSize: 16, color: C.app_main, fontWeight: FontWeight.w600))),
+              child: Center(child: Text('更多租房', style: TextStyle(fontSize: 16, color: C.app_main, fontWeight: FontWeight.w600))),
             ),
-            onTap: () => Utils.wait('更多新房'),
+            onTap: () => Utils.wait('更多租房'),
           )
         ],
       ),
@@ -71,30 +71,30 @@ class HomePageRecommXin extends StatelessWidget {
         Container(width: double.infinity, height: 0.5, color: Color(0xFFDDDDDD)),
         _buildListItem(
           context,
-          R.assetsImgHouse4,
-          '华润城万象府',
-          '地铁口，成熟片区，配套丰富',
-          '102000元/平',
-          '建面 90-400㎡',
-          ['地铁沿线', '公交直达', '购物方便', '娱乐丰富'],
+          R.assetsImgHouse7,
+          '整租·常福楼 1室1厅 西南',
+          '链家30㎡翻身 距新安站1.2km',
+          '1200元/月',
+          '',
+          ['近地铁', '新上'],
         ),
         _buildListItem(
           context,
-          R.assetsImgHouse5,
-          '中森公园华府',
-          '住宅 龙华区 观澜',
-          '45000元/平',
-          '建面 69-121㎡',
-          ['绿化率高'],
+          R.assetsImgHouse8,
+          '整租·富通蟠龙居 1室0厅 东南',
+          '职业房东 23㎡ 西乡 距西乡站0.8km',
+          '1698元/月',
+          '',
+          ['月租', '近地铁', '精装', '新上', '随时看房'],
         ),
         _buildListItem(
           context,
-          R.assetsImgHouse6,
-          '佳兆业盐田城市广场',
-          '山海间的百万建面综合体',
-          '48000元/平',
-          '建面 71-140㎡',
-          ['品牌房企', '人车分离', '购物方便', '娱乐丰富'],
+          R.assetsImgHouse9,
+          '合·冠名花园 4居室 南卧',
+          '四季时代酒店公寓 9㎡ 西丽',
+          '1930元/月',
+          '',
+          ['精装', '押一付一', '新上', '随时看房'],
         ),
       ],
     );

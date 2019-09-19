@@ -5,6 +5,7 @@ import 'package:bbhouse/comm/const.dart';
 import 'package:bbhouse/comm/info.dart';
 import 'package:cookie_jar/cookie_jar.dart';
 import 'package:dio/dio.dart';
+import 'package:dio_cookie_manager/dio_cookie_manager.dart';
 import 'package:flog/flog.dart';
 
 /// function: DioManager
@@ -62,7 +63,7 @@ class DioManager {
   BaseOptions _defaultOption() {
     BaseOptions option = new BaseOptions();
     option.baseUrl = Const.URL_BASE;
-    option.contentType = ContentType.parse("application/x-www-form-urlencoded");
+    option.contentType = ContentType.parse("application/x-www-form-urlencoded").mimeType;
     option.connectTimeout = 1000 * 10;
     option.receiveTimeout = 1000 * 20;
     option.sendTimeout = 1000 * 10;
@@ -139,7 +140,7 @@ class DioManager {
   /// check Options.
   Options _checkOptions(method, options) {
     if (options == null) {
-      options = new Options(method: method, contentType: ContentType.parse("application/x-www-form-urlencoded"));
+      options = new Options(method: method, contentType: ContentType.parse("application/x-www-form-urlencoded").mimeType);
     }
     return options;
   }
