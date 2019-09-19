@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../r.dart';
+
 /// function: NewsPage
 /// <p>Created by Leo on 2019/9/16.</p>
 class NewsPage extends StatefulWidget {
@@ -22,7 +24,19 @@ class _NewsPageState extends State<NewsPage> {
 
   @override
   Widget build(BuildContext context) {
-    //TODO create Widget
-    return Scaffold(appBar: AppBar(title: Text('News')));
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        centerTitle: true,
+        title: Text('消息', style: TextStyle(color: Colors.black)),
+      ),
+      backgroundColor: Colors.white,
+      body: Center(
+        child: Padding(
+          padding: EdgeInsets.only(left: 100, right: 100),
+          child: Image.asset(R.assetsImgNewsEmpty),
+        ),
+      ),
+    );
   }
 }

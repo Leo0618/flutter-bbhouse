@@ -143,6 +143,8 @@ class R {
   static final String assetsImgImgDefaultSquarSmall = 'assets/img/img_default_squar_small.png';
   /// ![](http://127.0.0.1:9227/assets/img/img_default_width.png)
   static final String assetsImgImgDefaultWidth = 'assets/img/img_default_width.png';
+  /// ![](http://127.0.0.1:9227/assets/img/news_empty.png)
+  static final String assetsImgNewsEmpty = 'assets/img/news_empty.png';
   /// ![](http://127.0.0.1:9227/assets/img/slogan.png)
   static final String assetsImgSlogan = 'assets/img/slogan.png';
   /// ![](http://127.0.0.1:9227/assets/img/zhishu.png)

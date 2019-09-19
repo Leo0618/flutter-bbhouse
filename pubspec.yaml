@@ -129,6 +129,7 @@ flutter:
     - assets/img/img_default_squar_large.png
     - assets/img/img_default_squar_small.png
     - assets/img/img_default_width.png
+    - assets/img/news_empty.png
     - assets/img/slogan.png
     - assets/img/zhishu.png
     - assets/img/zhishu1.png
