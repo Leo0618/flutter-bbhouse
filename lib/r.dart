@@ -5,6 +5,64 @@ class R {
   static final String assetsImgBgSplash = 'assets/img/bg_splash.png';
   /// ![](http://127.0.0.1:9227/assets/img/empty.png)
   static final String assetsImgEmpty = 'assets/img/empty.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feeda1.png)
+  static final String assetsImgFeeda1 = 'assets/img/feeda1.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feeda2.png)
+  static final String assetsImgFeeda2 = 'assets/img/feeda2.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feeda3.png)
+  static final String assetsImgFeeda3 = 'assets/img/feeda3.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feeda4.png)
+  static final String assetsImgFeeda4 = 'assets/img/feeda4.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feeda5.png)
+  static final String assetsImgFeeda5 = 'assets/img/feeda5.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feeda6.png)
+  static final String assetsImgFeeda6 = 'assets/img/feeda6.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feeda7.png)
+  static final String assetsImgFeeda7 = 'assets/img/feeda7.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feeda8.png)
+  static final String assetsImgFeeda8 = 'assets/img/feeda8.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feedb1.png)
+  static final String assetsImgFeedb1 = 'assets/img/feedb1.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feedb2.png)
+  static final String assetsImgFeedb2 = 'assets/img/feedb2.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feedb3.png)
+  static final String assetsImgFeedb3 = 'assets/img/feedb3.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feedb4.png)
+  static final String assetsImgFeedb4 = 'assets/img/feedb4.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feedb5.png)
+  static final String assetsImgFeedb5 = 'assets/img/feedb5.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feedb6.png)
+  static final String assetsImgFeedb6 = 'assets/img/feedb6.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feedb7.png)
+  static final String assetsImgFeedb7 = 'assets/img/feedb7.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feedb8.png)
+  static final String assetsImgFeedb8 = 'assets/img/feedb8.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feedc1.png)
+  static final String assetsImgFeedc1 = 'assets/img/feedc1.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feedc2.png)
+  static final String assetsImgFeedc2 = 'assets/img/feedc2.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feedc3.png)
+  static final String assetsImgFeedc3 = 'assets/img/feedc3.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feedc4.png)
+  static final String assetsImgFeedc4 = 'assets/img/feedc4.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feedc5.png)
+  static final String assetsImgFeedc5 = 'assets/img/feedc5.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feedc6.png)
+  static final String assetsImgFeedc6 = 'assets/img/feedc6.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feedc7.png)
+  static final String assetsImgFeedc7 = 'assets/img/feedc7.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feedd1.png)
+  static final String assetsImgFeedd1 = 'assets/img/feedd1.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feedd2.png)
+  static final String assetsImgFeedd2 = 'assets/img/feedd2.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feedd3.png)
+  static final String assetsImgFeedd3 = 'assets/img/feedd3.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feedd4.png)
+  static final String assetsImgFeedd4 = 'assets/img/feedd4.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feedd5.png)
+  static final String assetsImgFeedd5 = 'assets/img/feedd5.png';
+  /// ![](http://127.0.0.1:9227/assets/img/feedd6.png)
+  static final String assetsImgFeedd6 = 'assets/img/feedd6.png';
   /// ![](http://127.0.0.1:9227/assets/img/homeActivity1.png)
   static final String assetsImgHomeActivity1 = 'assets/img/homeActivity1.png';
   /// ![](http://127.0.0.1:9227/assets/img/homeActivity2.png)

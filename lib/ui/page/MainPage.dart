@@ -3,7 +3,7 @@ import 'package:bbhouse/comm/c.dart';
 import 'package:bbhouse/data/user_info_manager.dart';
 import 'package:bbhouse/generated/i18n.dart';
 import 'package:bbhouse/ui/page/AccountPage.dart';
-import 'package:bbhouse/ui/page/FeedlistPage.dart';
+import 'package:bbhouse/ui/page/FeedPage.dart';
 import 'package:bbhouse/ui/page/NewsPage.dart';
 import 'package:bbhouse/ui/widget/page_route_builders.dart';
 import 'package:flutter/material.dart';
@@ -38,7 +38,7 @@ class _MainPageState extends State<MainPage> {
     ];
     _pageList = [
       BlocProvider(child: new HomePage(), bloc: new HomeBloc()),
-      FeedlistPage(),
+      FeedPage(),
       NewsPage(),
       AccountPage(),
     ];
