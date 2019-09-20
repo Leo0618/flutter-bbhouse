@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import './animation_direction.dart';
 
@@ -59,7 +61,7 @@ class FlutterMarqueeItem extends StatefulWidget {
         this.textSize = textSize ?? 16.0,
         this.animationDirection = animationDirection ?? AnimationDirection.b2t,
         this.itemDuration = itemDuration ?? 500,
-        this.key = key ?? GlobalKey(),
+        this.key = key ?? GlobalKey(debugLabel: Random().nextDouble().toString()),
         this.singleLine = !singleLine ?? true,
         super(key: key);
 

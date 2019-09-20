@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:bbhouse/bloc/index_bloc.dart';
 import 'package:bbhouse/comm/c.dart';
 import 'package:bbhouse/data/HomeModel.dart';
+import 'package:bbhouse/ui/page/ErshouPage.dart';
 import 'package:bbhouse/ui/page/HomePageCateTab.dart';
 import 'package:bbhouse/ui/page/HomePageHotTopic.dart';
 import 'package:bbhouse/ui/page/HomePageNews.dart';
@@ -151,7 +152,13 @@ class _HomePageState extends State<HomePage> {
                 Text(item.title, style: TextStyle(color: Color(0xFF333333), fontSize: 12)),
               ],
             ),
-            onTap: () => Utils.wait(item.title),
+            onTap: () {
+              if ('二手房' == item.title) {
+                Navigator.push(context, RouteBuilders.slideFromRight(new ErshouPage()));
+              } else {
+                Utils.wait(item.title);
+              }
+            },
           );
         }).toList(),
       ),

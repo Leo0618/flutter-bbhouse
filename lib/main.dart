@@ -40,6 +40,7 @@ class MyAppState extends State<MyApp> {
         accentColor: C.app_accent,
         indicatorColor: Colors.white,
         highlightColor: Colors.transparent,
+        splashColor: Colors.transparent,
       ),
       localizationsDelegates: const [
         S.delegate,

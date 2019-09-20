@@ -39,6 +39,8 @@ dependencies:
   flutter_easyrefresh: ^2.0.4
   # https://github.com/flutter/plugins/tree/master/packages/webview_flutter
   webview_flutter: ^0.3.14+1
+  # https://github.com/best-flutter/flutter_swiper
+  flutter_swiper: ^1.1.6
 
 dev_dependencies:
   flutter_test:
@@ -57,10 +59,32 @@ flutter:
   assets:
     # assets-generator-begin
     # assets/img/*
+    - assets/img/banner1.png
+    - assets/img/banner2.png
+    - assets/img/banner3.png
+    - assets/img/banner4.png
+    - assets/img/banner5.png
     - assets/img/bg_alert.png
     - assets/img/bg_splash.png
     - assets/img/default_avatar.png
     - assets/img/empty.png
+    - assets/img/ershou_hot1.png
+    - assets/img/ershou_hot2.png
+    - assets/img/ershou_hot3.png
+    - assets/img/ershou_hot4.png
+    - assets/img/ershou_hot5.png
+    - assets/img/ershou_house1.png
+    - assets/img/ershou_house2.png
+    - assets/img/ershou_house3.png
+    - assets/img/ershou_house4.png
+    - assets/img/ershou_house5.png
+    - assets/img/ershou_house6.png
+    - assets/img/ershou_list_1.png
+    - assets/img/ershou_list_2.png
+    - assets/img/ershou_list_3.png
+    - assets/img/ershou_list_4.png
+    - assets/img/ershou_tab_a.png
+    - assets/img/ershou_tab_b.png
     - assets/img/feeda1.png
     - assets/img/feeda2.png
     - assets/img/feeda3.png
@@ -135,6 +159,7 @@ flutter:
     - assets/img/mine3.png
     - assets/img/news_empty.png
     - assets/img/slogan.png
+    - assets/img/sort.png
     - assets/img/zhishu.png
     - assets/img/zhishu1.png
     - assets/img/zhishu2.png

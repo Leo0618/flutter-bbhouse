@@ -19,7 +19,7 @@ class _WebViewPageState extends State<WebViewPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: BackButton(color: C.app_main),
+        leading: InkWell(child: Icon(Icons.arrow_back, color: Colors.black), onTap: () => Navigator.maybePop(context)),
         title: Text(widget.url, style: TextStyle(color: Colors.black87)),
         backgroundColor: Colors.white,
       ),

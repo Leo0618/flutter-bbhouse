@@ -8,6 +8,7 @@ class TagWidget extends StatelessWidget {
   final Color tagNameColor;
   final Color bgColor;
   final double cornerRadius;
+  final EdgeInsetsGeometry padding;
 
   TagWidget(
     this.tagName, {
@@ -15,11 +16,13 @@ class TagWidget extends StatelessWidget {
     Color tagNameColor,
     Color bgColor,
     double cornerRadius,
+    EdgeInsetsGeometry padding,
   })  : assert(tagName != null),
         this.tagNameFontSize = tagNameFontSize ?? 10.0,
         this.tagNameColor = tagNameColor ?? Colors.white,
         this.bgColor = bgColor ?? Colors.blueAccent,
-        this.cornerRadius = cornerRadius ?? 3.0;
+        this.cornerRadius = cornerRadius ?? 3.0,
+        this.padding = padding ?? EdgeInsets.fromLTRB(4, 2, 4, 2);
 
   @override
   Widget build(BuildContext context) {
@@ -28,12 +31,14 @@ class TagWidget extends StatelessWidget {
         color: this.bgColor,
         borderRadius: BorderRadius.circular(cornerRadius),
       ),
-      padding: EdgeInsets.fromLTRB(4, 2, 4, 2),
-      child: Text(
-        tagName,
-        softWrap: true,
-        overflow: TextOverflow.ellipsis,
-        style: TextStyle(fontSize: tagNameFontSize, color: tagNameColor),
+      padding: padding,
+      child: Center(
+        child: Text(
+          tagName,
+          softWrap: true,
+          overflow: TextOverflow.ellipsis,
+          style: TextStyle(fontSize: tagNameFontSize, color: tagNameColor),
+        ),
       ),
     );
   }

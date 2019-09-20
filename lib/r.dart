@@ -1,4 +1,14 @@
 class R {
+  /// ![](http://127.0.0.1:9227/assets/img/banner1.png)
+  static final String assetsImgBanner1 = 'assets/img/banner1.png';
+  /// ![](http://127.0.0.1:9227/assets/img/banner2.png)
+  static final String assetsImgBanner2 = 'assets/img/banner2.png';
+  /// ![](http://127.0.0.1:9227/assets/img/banner3.png)
+  static final String assetsImgBanner3 = 'assets/img/banner3.png';
+  /// ![](http://127.0.0.1:9227/assets/img/banner4.png)
+  static final String assetsImgBanner4 = 'assets/img/banner4.png';
+  /// ![](http://127.0.0.1:9227/assets/img/banner5.png)
+  static final String assetsImgBanner5 = 'assets/img/banner5.png';
   /// ![](http://127.0.0.1:9227/assets/img/bg_alert.png)
   static final String assetsImgBgAlert = 'assets/img/bg_alert.png';
   /// ![](http://127.0.0.1:9227/assets/img/bg_splash.png)
@@ -7,6 +17,40 @@ class R {
   static final String assetsImgDefaultAvatar = 'assets/img/default_avatar.png';
   /// ![](http://127.0.0.1:9227/assets/img/empty.png)
   static final String assetsImgEmpty = 'assets/img/empty.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ershou_hot1.png)
+  static final String assetsImgErshouHot1 = 'assets/img/ershou_hot1.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ershou_hot2.png)
+  static final String assetsImgErshouHot2 = 'assets/img/ershou_hot2.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ershou_hot3.png)
+  static final String assetsImgErshouHot3 = 'assets/img/ershou_hot3.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ershou_hot4.png)
+  static final String assetsImgErshouHot4 = 'assets/img/ershou_hot4.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ershou_hot5.png)
+  static final String assetsImgErshouHot5 = 'assets/img/ershou_hot5.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ershou_house1.png)
+  static final String assetsImgErshouHouse1 = 'assets/img/ershou_house1.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ershou_house2.png)
+  static final String assetsImgErshouHouse2 = 'assets/img/ershou_house2.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ershou_house3.png)
+  static final String assetsImgErshouHouse3 = 'assets/img/ershou_house3.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ershou_house4.png)
+  static final String assetsImgErshouHouse4 = 'assets/img/ershou_house4.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ershou_house5.png)
+  static final String assetsImgErshouHouse5 = 'assets/img/ershou_house5.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ershou_house6.png)
+  static final String assetsImgErshouHouse6 = 'assets/img/ershou_house6.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ershou_list_1.png)
+  static final String assetsImgErshouList1 = 'assets/img/ershou_list_1.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ershou_list_2.png)
+  static final String assetsImgErshouList2 = 'assets/img/ershou_list_2.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ershou_list_3.png)
+  static final String assetsImgErshouList3 = 'assets/img/ershou_list_3.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ershou_list_4.png)
+  static final String assetsImgErshouList4 = 'assets/img/ershou_list_4.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ershou_tab_a.png)
+  static final String assetsImgErshouTabA = 'assets/img/ershou_tab_a.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ershou_tab_b.png)
+  static final String assetsImgErshouTabB = 'assets/img/ershou_tab_b.png';
   /// ![](http://127.0.0.1:9227/assets/img/feeda1.png)
   static final String assetsImgFeeda1 = 'assets/img/feeda1.png';
   /// ![](http://127.0.0.1:9227/assets/img/feeda2.png)
@@ -155,6 +199,8 @@ class R {
   static final String assetsImgNewsEmpty = 'assets/img/news_empty.png';
   /// ![](http://127.0.0.1:9227/assets/img/slogan.png)
   static final String assetsImgSlogan = 'assets/img/slogan.png';
+  /// ![](http://127.0.0.1:9227/assets/img/sort.png)
+  static final String assetsImgSort = 'assets/img/sort.png';
   /// ![](http://127.0.0.1:9227/assets/img/zhishu.png)
   static final String assetsImgZhishu = 'assets/img/zhishu.png';
   /// ![](http://127.0.0.1:9227/assets/img/zhishu1.png)
