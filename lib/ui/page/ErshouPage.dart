@@ -16,7 +16,7 @@ class ErshouPage extends StatefulWidget {
   }
 }
 
-class _ErshouPageState extends State<ErshouPage> {
+class _ErshouPageState extends State<ErshouPage> with SingleTickerProviderStateMixin {
   ScrollController _scrollController;
   final GlobalKey _allHouseKey = GlobalKey();
 
@@ -25,6 +25,10 @@ class _ErshouPageState extends State<ErshouPage> {
     super.initState();
     _scrollController = new ScrollController();
     _scrollController.addListener(_onScrollListener);
+
+    controller = new AnimationController(duration: const Duration(milliseconds: 300), vsync: this);
+    _tween = new Tween(begin: 0.0, end: 700.0);
+    animation = _tween.animate(CurvedAnimation(parent: controller, curve: Curves.fastLinearToSlowEaseIn));
   }
 
   @override
@@ -34,6 +38,7 @@ class _ErshouPageState extends State<ErshouPage> {
       _scrollController.dispose();
       _scrollController.removeListener(_onScrollListener);
     }
+    controller.dispose();
   }
 
   void _onScrollListener() {
@@ -50,7 +55,10 @@ class _ErshouPageState extends State<ErshouPage> {
   }
 
   void _jump(int index) {
-    Utils.toast('弹出菜单-$index');
+//    if (!_hideMenu) return;
+    _currentPopIndex = index;
+    Utils.toast('弹出菜单-$_currentPopIndex');
+    if (_currentPopIndex == -1) return;
     //标题栏高度获取
     RenderBox renderBoxTitlebar = _titleBarKey.currentContext.findRenderObject();
     var offsetTitlebar = renderBoxTitlebar.localToGlobal(Offset(0, renderBoxTitlebar.size.height));
@@ -61,14 +69,29 @@ class _ErshouPageState extends State<ErshouPage> {
     double offsetNew = _scrollController.offset + offsetAllhouseTop.dy - offsetTitlebar.dy;
     _scrollController.animateTo(offsetNew, duration: Duration(milliseconds: 1000), curve: Curves.fastLinearToSlowEaseIn);
 
-    Future.delayed(Duration(milliseconds: 1000), () {
-      setState(() {
-        //_hideMenu = false;
-      });
+    Future.delayed(Duration(milliseconds: 500), () {
+      _showMenu();
     });
   }
 
-  bool _hideMenu = true;
+  void _showMenu() {
+    _tween = new Tween(begin: 0.0, end: 700.0);
+    animation = _tween.animate(CurvedAnimation(parent: controller, curve: Curves.fastLinearToSlowEaseIn));
+    controller.reset();
+    controller.forward();
+  }
+
+  void _hideMenu() {
+    _tween = ReverseTween(_tween);
+    animation = _tween.animate(CurvedAnimation(parent: controller, curve: Curves.fastLinearToSlowEaseIn));
+    controller.reset();
+    controller.forward();
+  }
+
+  int _currentPopIndex = -1;
+  Tween<double> _tween;
+  Animation<double> animation;
+  AnimationController controller;
 
   @override
   Widget build(BuildContext context) {
@@ -141,16 +164,36 @@ class _ErshouPageState extends State<ErshouPage> {
                     ],
                   ),
                 ),
-                Offstage(
-                  offstage: _hideMenu,
-                  child: Container(
-                    height: 200,
-                    color: Colors.white,
-                  ),
+                AnimatedBuilder(
+                  animation: animation,
+                  builder: (BuildContext context, Widget child) {
+                    return Container(
+                      height: animation == null ? 0.0001 : animation.value,
+                      child: Column(
+                        children: <Widget>[
+                          Container(color: Colors.white, height: animation.value / 3, child: _buildPopWindow()),
+                          Expanded(child: InkWell(child: Container(color: Color(0x33000000)), onTap: _hideMenu)),
+                        ],
+                      ),
+                    );
+                  },
                 ),
               ],
             ),
           ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildPopWindow() {
+    return Container(
+      height: animation.value / 3 / 3,
+      child: Column(
+        children: <Widget>[
+          //TODO
+          //Expanded(child: Row(children: _buildMenuTabs()), flex: 1),
+          Expanded(child: Container(), flex: 3),
         ],
       ),
     );
