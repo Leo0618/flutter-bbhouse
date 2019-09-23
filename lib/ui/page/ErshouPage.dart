@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:bbhouse/comm/c.dart';
 import 'package:bbhouse/r.dart';
 import 'package:bbhouse/ui/page/ErshouPageHeadLayout.dart';
