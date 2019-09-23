@@ -74,6 +74,9 @@ class UtilScreen {
   /// 状态栏高度
   double get statusBarHeight => _statusBarHeight;
 
+  /// _statusBarHeight+_appBarHeight
+  double get topBarHeight => _statusBarHeight + _appBarHeight;
+
   /// bottom bar Height
   double get bottomBarHeight => _bottomBarHeight;
 

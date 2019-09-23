@@ -165,6 +165,8 @@ class R {
   static final String assetsImgHouse8 = 'assets/img/house8.png';
   /// ![](http://127.0.0.1:9227/assets/img/house9.png)
   static final String assetsImgHouse9 = 'assets/img/house9.png';
+  /// ![](http://127.0.0.1:9227/assets/img/house_big.jpg)
+  static final String assetsImgHouseBig = 'assets/img/house_big.jpg';
   /// ![](http://127.0.0.1:9227/assets/img/icon_account_normal.png)
   static final String assetsImgIconAccountNormal = 'assets/img/icon_account_normal.png';
   /// ![](http://127.0.0.1:9227/assets/img/icon_account_selected.png)
@@ -183,6 +185,22 @@ class R {
   static final String assetsImgIconNewsNormal = 'assets/img/icon_news_normal.png';
   /// ![](http://127.0.0.1:9227/assets/img/icon_news_selected.png)
   static final String assetsImgIconNewsSelected = 'assets/img/icon_news_selected.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ic_chat_dark.png)
+  static final String assetsImgIcChatDark = 'assets/img/ic_chat_dark.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ic_chat_white.png)
+  static final String assetsImgIcChatWhite = 'assets/img/ic_chat_white.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ic_compare_dark.png)
+  static final String assetsImgIcCompareDark = 'assets/img/ic_compare_dark.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ic_compare_white.png)
+  static final String assetsImgIcCompareWhite = 'assets/img/ic_compare_white.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ic_heart_dark.png)
+  static final String assetsImgIcHeartDark = 'assets/img/ic_heart_dark.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ic_heart_white.png)
+  static final String assetsImgIcHeartWhite = 'assets/img/ic_heart_white.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ic_share_dark.png)
+  static final String assetsImgIcShareDark = 'assets/img/ic_share_dark.png';
+  /// ![](http://127.0.0.1:9227/assets/img/ic_share_white.png)
+  static final String assetsImgIcShareWhite = 'assets/img/ic_share_white.png';
   /// ![](http://127.0.0.1:9227/assets/img/img_default_squar_large.png)
   static final String assetsImgImgDefaultSquarLarge = 'assets/img/img_default_squar_large.png';
   /// ![](http://127.0.0.1:9227/assets/img/img_default_squar_small.png)

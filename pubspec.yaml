@@ -142,6 +142,7 @@ flutter:
     - assets/img/house7.png
     - assets/img/house8.png
     - assets/img/house9.png
+    - assets/img/house_big.jpg
     - assets/img/icon_account_normal.png
     - assets/img/icon_account_selected.png
     - assets/img/icon_feedlist_normal.png
@@ -151,6 +152,14 @@ flutter:
     - assets/img/icon_nav_location.png
     - assets/img/icon_news_normal.png
     - assets/img/icon_news_selected.png
+    - assets/img/ic_chat_dark.png
+    - assets/img/ic_chat_white.png
+    - assets/img/ic_compare_dark.png
+    - assets/img/ic_compare_white.png
+    - assets/img/ic_heart_dark.png
+    - assets/img/ic_heart_white.png
+    - assets/img/ic_share_dark.png
+    - assets/img/ic_share_white.png
     - assets/img/img_default_squar_large.png
     - assets/img/img_default_squar_small.png
     - assets/img/img_default_width.png

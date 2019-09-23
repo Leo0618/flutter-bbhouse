@@ -5,7 +5,9 @@ import 'package:bbhouse/util/utils.dart';
 import 'package:flutter/material.dart';
 
 import '../../r.dart';
+import 'ErshouPage.dart';
 import 'WebViewPage.dart';
+import 'OldHousePage.dart';
 
 /// function: HomePageRecommErshou
 /// <p>Created by Leo on 2019/9/18.</p>
@@ -57,7 +59,7 @@ class HomePageRecommErshou extends StatelessWidget {
               padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
               child: Center(child: Text('更多二手房', style: TextStyle(fontSize: 16, color: C.app_main, fontWeight: FontWeight.w600))),
             ),
-            onTap: () => Utils.wait('更多二手房'),
+            onTap: () => Navigator.push(context, RouteBuilders.slideFromRight(new ErshouPage())),
           )
         ],
       ),
@@ -166,7 +168,7 @@ class HomePageRecommErshou extends StatelessWidget {
           Container(width: double.infinity, height: 0.5, color: Color(0xFFDDDDDD), margin: EdgeInsets.only(top: 15)),
         ],
       ),
-      onTap: () => Navigator.of(context).push(RouteBuilders.slideFromRight(WebViewPage('https://m.lianjia.com/subject/24666.h5'))),
+      onTap: () => Navigator.push(context, RouteBuilders.slideFromRight(OldHousePage(title.substring(0, title.indexOf(' '))))),
       onLongPress: () => Utils.wait('长按-' + title),
     );
   }
