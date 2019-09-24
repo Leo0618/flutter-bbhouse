@@ -2,10 +2,13 @@ import 'package:bbhouse/comm/c.dart';
 import 'package:bbhouse/r.dart';
 import 'package:bbhouse/ui/page/ErshouPageHeadLayout.dart';
 import 'package:bbhouse/ui/widget/TagWidget.dart';
+import 'package:bbhouse/ui/widget/page_route_builders.dart';
 import 'package:bbhouse/util/util_screen.dart';
 import 'package:bbhouse/util/utils.dart';
 import 'package:flog/flog.dart';
 import 'package:flutter/material.dart';
+
+import 'OldHousePage.dart';
 
 /// function: ErshouPage
 /// <p>Created by Leo on 2019/9/20.</p>
@@ -158,7 +161,7 @@ class _ErshouPageState extends State<ErshouPage> with SingleTickerProviderStateM
                                   Container(height: 0.5, width: double.infinity, color: Color(0xFFDDDDDD)),
                                 ],
                               ),
-                              onTap: () => Utils.wait('house'));
+                              onTap: () => Navigator.push(context, RouteBuilders.slideFromRight(OldHousePage(''))));
                         }).toList(),
                       ),
                     ],

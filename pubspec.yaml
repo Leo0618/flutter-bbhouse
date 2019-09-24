@@ -67,6 +67,17 @@ flutter:
     - assets/img/bg_alert.png
     - assets/img/bg_splash.png
     - assets/img/default_avatar.png
+    - assets/img/detail_1.png
+    - assets/img/detail_2.png
+    - assets/img/detail_3.png
+    - assets/img/detail_4.png
+    - assets/img/detail_5.png
+    - assets/img/detail_6.png
+    - assets/img/detail_divider_1.png
+    - assets/img/detail_tab1.png
+    - assets/img/detail_tab2.png
+    - assets/img/detail_tab3.png
+    - assets/img/detail_tab4.png
     - assets/img/empty.png
     - assets/img/ershou_hot1.png
     - assets/img/ershou_hot2.png
@@ -167,6 +178,7 @@ flutter:
     - assets/img/mine2.png
     - assets/img/mine3.png
     - assets/img/news_empty.png
+    - assets/img/saler_contact.png
     - assets/img/slogan.png
     - assets/img/sort.png
     - assets/img/zhishu.png

@@ -15,6 +15,28 @@ class R {
   static final String assetsImgBgSplash = 'assets/img/bg_splash.png';
   /// ![](http://127.0.0.1:9227/assets/img/default_avatar.png)
   static final String assetsImgDefaultAvatar = 'assets/img/default_avatar.png';
+  /// ![](http://127.0.0.1:9227/assets/img/detail_1.png)
+  static final String assetsImgDetail1 = 'assets/img/detail_1.png';
+  /// ![](http://127.0.0.1:9227/assets/img/detail_2.png)
+  static final String assetsImgDetail2 = 'assets/img/detail_2.png';
+  /// ![](http://127.0.0.1:9227/assets/img/detail_3.png)
+  static final String assetsImgDetail3 = 'assets/img/detail_3.png';
+  /// ![](http://127.0.0.1:9227/assets/img/detail_4.png)
+  static final String assetsImgDetail4 = 'assets/img/detail_4.png';
+  /// ![](http://127.0.0.1:9227/assets/img/detail_5.png)
+  static final String assetsImgDetail5 = 'assets/img/detail_5.png';
+  /// ![](http://127.0.0.1:9227/assets/img/detail_6.png)
+  static final String assetsImgDetail6 = 'assets/img/detail_6.png';
+  /// ![](http://127.0.0.1:9227/assets/img/detail_divider_1.png)
+  static final String assetsImgDetailDivider1 = 'assets/img/detail_divider_1.png';
+  /// ![](http://127.0.0.1:9227/assets/img/detail_tab1.png)
+  static final String assetsImgDetailTab1 = 'assets/img/detail_tab1.png';
+  /// ![](http://127.0.0.1:9227/assets/img/detail_tab2.png)
+  static final String assetsImgDetailTab2 = 'assets/img/detail_tab2.png';
+  /// ![](http://127.0.0.1:9227/assets/img/detail_tab3.png)
+  static final String assetsImgDetailTab3 = 'assets/img/detail_tab3.png';
+  /// ![](http://127.0.0.1:9227/assets/img/detail_tab4.png)
+  static final String assetsImgDetailTab4 = 'assets/img/detail_tab4.png';
   /// ![](http://127.0.0.1:9227/assets/img/empty.png)
   static final String assetsImgEmpty = 'assets/img/empty.png';
   /// ![](http://127.0.0.1:9227/assets/img/ershou_hot1.png)
@@ -215,6 +237,8 @@ class R {
   static final String assetsImgMine3 = 'assets/img/mine3.png';
   /// ![](http://127.0.0.1:9227/assets/img/news_empty.png)
   static final String assetsImgNewsEmpty = 'assets/img/news_empty.png';
+  /// ![](http://127.0.0.1:9227/assets/img/saler_contact.png)
+  static final String assetsImgSalerContact = 'assets/img/saler_contact.png';
   /// ![](http://127.0.0.1:9227/assets/img/slogan.png)
   static final String assetsImgSlogan = 'assets/img/slogan.png';
   /// ![](http://127.0.0.1:9227/assets/img/sort.png)
