@@ -44,11 +44,11 @@ class _OldHousePageTitlebarImplState extends State<_OldHousePageTitlebarImpl> {
 
   @override
   void dispose() {
-    super.dispose();
     if (widget._scrollController != null) {
       widget._scrollController.dispose();
       widget._scrollController.removeListener(_onScrollListener);
     }
+    super.dispose();
   }
 
   void _onScrollListener() {

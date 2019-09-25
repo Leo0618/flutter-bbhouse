@@ -134,8 +134,8 @@ class WalkthroughState extends State<FlutterMarqueeItem> with SingleTickerProvid
   @override
   void dispose() {
     widget.modeListener.removeListener(_updateListener);
-    super.dispose();
     animationController.dispose();
+    super.dispose();
   }
 
   @override

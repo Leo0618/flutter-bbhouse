@@ -1,4 +1,5 @@
 import 'package:bbhouse/comm/c.dart';
+import 'package:bbhouse/fmap.dart';
 import 'package:bbhouse/ui/page/MapShowPage.dart';
 import 'package:bbhouse/ui/page/OldHousePageTitlebar.dart';
 import 'package:bbhouse/ui/widget/page_route_builders.dart';
@@ -32,9 +33,9 @@ class _OldHousePageState extends State<OldHousePage> with SingleTickerProviderSt
 
   @override
   void dispose() {
-    super.dispose();
     _scrollController.dispose();
     if (_tabController != null) _tabController.dispose();
+    super.dispose();
   }
 
   bool _hideStepIndicator = true;
@@ -185,7 +186,8 @@ class _OldHousePageState extends State<OldHousePage> with SingleTickerProviderSt
         Image.asset(R.assetsImgDetail4, width: double.infinity, fit: BoxFit.fitWidth),
         InkWell(
           child: Image.asset(R.assetsImgDetail5, width: double.infinity, fit: BoxFit.fitWidth),
-          onTap: () => Navigator.of(context).push(RouteBuilders.slideFromRight(MapShowPage(113.953705, 22.535783))),
+          // onTap: () => Navigator.of(context).push(RouteBuilders.slideFromRight(MapShowPage(113.953705, 22.535783))),
+          onTap: () => Fmap.showOldHouseMapShow(113.893389,22.565497),
         ),
         Image.asset(R.assetsImgDetail6, width: double.infinity, fit: BoxFit.fitWidth),
       ],

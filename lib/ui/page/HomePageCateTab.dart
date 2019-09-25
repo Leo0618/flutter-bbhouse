@@ -40,11 +40,11 @@ class _HomePageCateTabState extends State<HomePageCateTab> with SingleTickerProv
 
   @override
   void dispose() {
-    super.dispose();
     if (_tabController != null) _tabController.dispose();
     if (_timer != null) {
       _timer.cancel();
     }
+    super.dispose();
   }
 
   @override

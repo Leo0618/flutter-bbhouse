@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">
         <!-- Show a splash screen on the activity. Automatically removed when
              Flutter draws its first frame -->
         <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/activity_translate</item>
+    </style>
+
+    <!--全局定义Activity进出动画-->
+    <style name="activity_translate" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_slide_in_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_slide_out_to_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_slide_out_to_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_slide_in_from_left</item>
     </style>
 </resources>

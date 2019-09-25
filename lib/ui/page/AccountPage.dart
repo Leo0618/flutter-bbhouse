@@ -61,8 +61,8 @@ class _AccountPageState extends State<AccountPage> {
 
   @override
   void dispose() {
-    super.dispose();
     if (_scrollController != null) _scrollController.dispose();
+    super.dispose();
   }
 
   double lastOffset = 0;

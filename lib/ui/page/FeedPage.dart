@@ -35,9 +35,9 @@ class _FeedPageState extends State<FeedPage> with SingleTickerProviderStateMixin
 
   @override
   void dispose() {
-    super.dispose();
     if (_tabController != null) _tabController.dispose();
     if (_controller != null) _controller.dispose();
+    super.dispose();
   }
 
   @override

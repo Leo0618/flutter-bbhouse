@@ -36,12 +36,12 @@ class _ErshouPageState extends State<ErshouPage> with SingleTickerProviderStateM
 
   @override
   void dispose() {
-    super.dispose();
     if (_scrollController != null) {
       _scrollController.dispose();
       _scrollController.removeListener(_onScrollListener);
     }
     controller.dispose();
+    super.dispose();
   }
 
   void _onScrollListener() {

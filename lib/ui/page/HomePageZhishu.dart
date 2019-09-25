@@ -26,8 +26,8 @@ class _HomePageZhishuState extends State<HomePageZhishu> with SingleTickerProvid
 
   @override
   void dispose() {
-    super.dispose();
     if (_tabController != null) _tabController.dispose();
+    super.dispose();
   }
 
   @override

@@ -42,9 +42,9 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void dispose() {
-    super.dispose();
     if (_bloc != null) _bloc.dispose();
     if (_controller != null) _controller.dispose();
+    super.dispose();
   }
 
   HomeBloc _bloc;

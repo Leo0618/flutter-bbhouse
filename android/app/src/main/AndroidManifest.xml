@@ -3,7 +3,8 @@
     package="vip.okfood.bbhouse">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <!--允许程序设置内置sd卡的写权限-->
+    <!--允许程序设置内置sd卡的读写权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <!--允许程序获取网络状态-->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -20,7 +21,7 @@
          additional functionality it is fine to subclass or reimplement
          FlutterApplication and put your custom class here. -->
     <application
-        android:name="io.flutter.app.FlutterApplication"
+        android:name=".App"
         android:icon="@mipmap/ic_launcher"
         android:label="贝贝找房"
         android:largeHeap="true"
@@ -30,7 +31,11 @@
         tools:ignore="AllowBackup,GoogleAppIndexingWarning,UnusedAttribute">
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="50557f5c18fcdb535ec62427b17e865d"/>
+            android:value="50557f5c18fcdb535ec62427b17e865d" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="uPgts5CG6koKa9L4daTG8aTGARTfPDKa" />
+
         <activity
             android:name=".MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
@@ -50,6 +55,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MapshowActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
 
         <!--   <provider
                     android:name="android.support.v4.content.FileProvider"
