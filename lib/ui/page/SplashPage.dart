@@ -1,7 +1,9 @@
 import 'package:bbhouse/comm/c.dart';
 import 'package:bbhouse/comm/const.dart';
+import 'package:bbhouse/util/utils.dart';
 import 'package:flog/flog.dart';
 import 'package:flutter/material.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'package:rxdart/rxdart.dart';
 
 import '../../r.dart';
@@ -28,16 +30,31 @@ class SplashPageState extends State<SplashPage> {
   }
 
   void init() async {
-    int star = DateTime.now().millisecondsSinceEpoch;
+    int start = DateTime.now().millisecondsSinceEpoch;
     Flog.config(Const.DEBUG);
-    bool deviceInitFinish = await Info.init();
-    if (deviceInitFinish) {
-      double costTime = (DateTime.now().millisecondsSinceEpoch - star) / 1000;
-      costTime = (costTime < _delayTime) ? _delayTime - costTime : costTime;
-      Observable.just(1).delay(new Duration(seconds: costTime.toInt())).listen((_) {
-        Navigator.pushReplacement(context, new MaterialPageRoute(builder: (BuildContext ctx) => new MainPage()));
-      });
+    await Info.init();
+    bool permissionOk = true;
+    Map<PermissionGroup, PermissionStatus> permissions = await PermissionHandler().requestPermissions([
+      PermissionGroup.storage,
+      PermissionGroup.location,
+      PermissionGroup.phone,
+    ]);
+    permissions.forEach((permissionGroup, permissionStatus) {
+      if (permissionStatus != PermissionStatus.granted) {
+        permissionOk = false;
+      }
+    });
+    if (!permissionOk) {
+      Utils.toast('请允许必要的权限');
+      PermissionHandler().openAppSettings();
+      return;
     }
+    double costTime = (DateTime.now().millisecondsSinceEpoch - start) * 1.0 / 1000;
+    Flog.d('启动页初始化耗时:$costTime秒');
+    costTime = (costTime < _delayTime) ? _delayTime - costTime : costTime;
+    Observable.just(1).delay(new Duration(seconds: costTime.toInt())).listen((_) {
+      Navigator.pushReplacement(context, new MaterialPageRoute(builder: (BuildContext ctx) => new MainPage()));
+    });
   }
 
   @override

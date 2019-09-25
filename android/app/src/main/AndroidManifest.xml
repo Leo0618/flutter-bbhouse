@@ -3,6 +3,16 @@
     package="vip.okfood.bbhouse">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <!--允许程序设置内置sd卡的写权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许程序获取网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--允许程序访问WiFi网络信息-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--允许程序读写手机状态和身份-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <!-- io.flutter.app.FlutterApplication is an android.app.Application that
          calls FlutterMain.startInitialization(this); in its onCreate method.
@@ -18,6 +28,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning,UnusedAttribute">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="50557f5c18fcdb535ec62427b17e865d"/>
         <activity
             android:name=".MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
@@ -38,7 +51,7 @@
             </intent-filter>
         </activity>
 
-        <!--        <provider
+        <!--   <provider
                     android:name="android.support.v4.content.FileProvider"
                     android:authorities="${applicationId}.fileprovider"
                     android:exported="false"

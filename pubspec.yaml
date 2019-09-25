@@ -41,6 +41,8 @@ dependencies:
   webview_flutter: ^0.3.14+1
   # https://github.com/best-flutter/flutter_swiper
   flutter_swiper: ^1.1.6
+  # permission_handler
+  permission_handler: ^3.2.2
 
 dev_dependencies:
   flutter_test:
